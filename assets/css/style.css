@@ -215,8 +215,9 @@ a:hover {
 }
 .footer {
     background: #282834;     
-    height: 100px;
+    height: 200%;
     width: 100%;  
+
     /* padding: 20px 0px;  */
 }
 .nav-logo-text-color {

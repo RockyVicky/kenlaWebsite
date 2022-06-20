@@ -350,7 +350,7 @@
 .footer {
     background: #282834;
     width: 100%;
-    height: 100px;
+    height: 125px;
 }
 
 .body-div {
@@ -403,7 +403,7 @@
     width: 200px;
     height: 200px;
     padding: 25px;
-    margin-left: -100px;
+    left: 10px;
 }
 
 @media (max-width:900px) {
@@ -415,10 +415,11 @@
 .back-img {
     width: auto;
     margin-top: -70px;
-    padding: 15px 10%;
+    padding: 15px ;
     background-image: url(../img/svg/E7_Bottom.svg);
     background-repeat: no-repeat;
     background-position: bottom;
+    
 }
 
 @media (max-width:900px) {
@@ -503,7 +504,7 @@
     right: 0
 }
 .bottom-dot-image {
-    padding: 15px 10%; 
+    padding: 15px; 
     width: 100%; 
     position: relative;
 }

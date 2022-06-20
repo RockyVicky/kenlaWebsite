@@ -109,6 +109,7 @@
                                 <div class="image-main-div">
                                     <div id="title" class="image-div"></div>
                                     <div id="imageText" class="image-div"></div>
+                                    <div id="imageText1" class="image-div"></div>
                                 </div>
                             </div>
                         </div>
@@ -122,12 +123,13 @@
                 <section class="bottom-image-curves">
                     <img src="./assets/img/svg/Bottom2Curves.svg" width="100%" height="100%" alt="bottomImage" />
                 </section>
-                <img alt="dot-3" src="assets/img/svg/E8_Separate Dot.svg" class="dot-f-style" />
+                <img alt="dot-3" src="assets/img/svg/E8_Separate Dot.svg" class="dot-f-style"  />
             </div>
             <!-- </div> -->
 
             <!-- /.section-features -->
             <div class="footer">
+                <img alt="we-dev" width="100%" height="100%" src="assets/img/svg/footer.svg" /> 
             </div>
         </main>
     </div>
@@ -135,16 +137,16 @@
         var technologiesArray = ["WEB", "MOBILE", "BACKEND", "PLATFORMS", "LANGUAGES", "DATABASES", "BIG DATAS", "MACHINES", "BLOCK CHAINS", "CLOUD"]
         var newTechnologiesArray = [];
         var imageArray = {
-            "WEB": ["assets/img/svg/html.svg", "assets/img/svg/react-js.svg", "assets/img/svg/angular.svg"],
-            "MOBILE": ["assets/img/svg/android.svg", "assets/img/svg/ios.svg"],
-            "BACKEND": ["assets/img/svg/android.svg", "assets/img/svg/ios.svg"],
+            "WEB": ["assets/img/tech/WebTech/angular.png","assets/img/tech/WebTech/css.png", "assets/img/tech/WebTech/html.png", "assets/img/tech/WebTech/javascript.png", "assets/img/tech/WebTech/nextjs.png", "assets/img/tech/WebTech/react.png", "assets/img/tech/WebTech/xml.png"],
+            "MOBILE": ["assets/img/tech/MobileTech/android.png", "assets/img/tech/MobileTech/cordova.png", "assets/img/tech/MobileTech/ios.png", "assets/img/tech/MobileTech/reactnative.png"],
+            "BACKEND": ["assets/img/tech/BackEnd/nodeJs.png", "assets/img/tech/BackEnd/play.png", "assets/img/tech/BackEnd/rails.png"],
             "PLATFORMS": ["assets/img/svg/android.svg", "assets/img/svg/ios.svg"],
-            "LANGUAGES": ["assets/img/svg/android.svg", "assets/img/svg/ios.svg"],
-            "DATABASES": ["assets/img/svg/android.svg", "assets/img/svg/ios.svg"],
-            "BIGDATAS": ["assets/img/svg/android.svg", "assets/img/svg/ios.svg"],
+            "LANGUAGES": ["assets/img/tech/Languages/c.jpeg", "assets/img/tech/Languages/dotnet.png", "assets/img/tech/Languages/java.png", "assets/img/tech/Languages/javascript.png", "assets/img/tech/Languages/objective.png", "assets/img/tech/Languages/ruby.png", "assets/img/tech/Languages/scala.png", "assets/img/tech/Languages/swift.jpeg", "assets/img/tech/Languages/visualbasic.png"],
+            "DATABASES": ["assets/img/tech/Databases/arangodb.png", "assets/img/tech/Databases/mongodb.png", "assets/img/tech/Databases/mysql.png", "assets/img/tech/Databases/orientdb.png", "assets/img/tech/Databases/postgresql.png", "assets/img/tech/Databases/sqllite.jpeg", "assets/img/tech/Databases/sqlserver.jpeg"],
+            "BIGDATAS": ["assets/img/tech/BigData/bigdata.png"],
             "MACHINES": ["assets/img/svg/android.svg", "assets/img/svg/ios.svg"],
-            "BLOCKCHAINS": ["assets/img/svg/android.svg", "assets/img/svg/ios.svg"],
-            "CLOUD": ["assets/img/svg/android.svg", "assets/img/svg/ios.svg"],
+            "BLOCKCHAINS": ["assets/img/tech/BlockChain/blockchain.png"],
+            "CLOUD": ["assets/img/tech/Cloud/aws.png", "assets/img/tech/Cloud/digitalocean.png"],
         }
         for (var i = 0; i < technologiesArray.length; i++) {
             document.getElementById("buttonText").innerHTML += `<button class=technology-button id=${technologiesArray[i]}  onclick=handleTechnologies(this.id)>${technologiesArray[i]}</button><br/>`
@@ -155,14 +157,24 @@
         });
         function handleTechnologies(param) {
             if (param !== undefined) {
+                console.log("*****param*******"+param)
                 let name = param === "BIG" ? "BIGDATAS" : param === "BLOCK" ? "BLOCKCHAINS" : param
                 let title = param === "BIG" ? "BIG DATAS" : param === "BLOCK" ? "BLOCK CHAINS" : param
                 document.getElementById("imageText").innerHTML = null
                 var re = Object.values(imageArray[name])
                 document.getElementById("title").innerHTML = `<p class=image-container-title>${title}</p>`
+                document.getElementById("imageText").innerHTML = null;
+                document.getElementById("imageText1").innerHTML = null;
                 for (var i = 0; i < re.length; i++) {
+                   if(i<= 5){
                     document.getElementById("imageText").innerHTML += `<div class=image-container><img src=${re[i]} width="45" height="45"
                                                     alt=${i} /></div>`
+                   }
+                   else{
+                    document.getElementById("imageText1").innerHTML += `<div class=image-container><img src=${re[i]} width="45" height="45"
+                                                    alt=${i} /></div>`
+                   }
+                    
                 }
             }
         }

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Contact Us | Kenla Systems</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="assets/css/homeStyle.css" rel="stylesheet"> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script type="text/javascript">
+        function sendEmail() {
+            var firstName = document.getElementById("fname").value
+            var lastName = document.getElementById("lname").value
+            var mail = document.getElementById("mail").value
+            var phone = document.getElementById("phone").value
+            var requirement = document.getElementById("requirement").value
+            var message = document.getElementById("message").value
+            console.log("message======" + message === "")
+            var isError = false;
+
+            if (firstName === "" || firstName === null) {
+                document.getElementById("fname_error").innerHTML = "First name cannot be empty."
+                isError = true
+            }
+            if (lastName === "" || lastName === null) {
+                document.getElementById("lname_error").innerHTML = "Last name cannot be empty."
+                isError = true
+            }
+            if (mail === "" || mail === null) {
+                document.getElementById("mail_error").innerHTML = "Mail ID cannot be empty."
+                isError = true
+            }
+            else if (!this.validateEmail(mail)) {
+                document.getElementById("mail_error").innerHTML = "Please enter valid email."
+                isError = true
+            }
+            if (phone === "" || phone === null) {
+                document.getElementById("phone_error").innerHTML = "Phone cannot be empty."
+                isError = true
+            }
+            else if (phone.length < 10) {
+                document.getElementById("phone_error").innerHTML = "Please enter valid phone number."
+                isError = true
+            }
+            if (requirement === "" || requirement === null) {
+                document.getElementById("requirement_error").innerHTML = "Requirement cannot be empty."
+                isError = true
+            }
+            if (message === "" || message === null) {
+                document.getElementById("message_error").innerHTML = "Message cannot be empty."
+                isError = true
+            }
+            if (isError === false) {
+                var btn = document.getElementById('toastbtn')
+                btn.classList.add('spin');
+                btn.disabled = true;
+                var body = "First Name : " + firstName + "<br/>" +
+                    "Last Name : " + lastName + "<br/>" +
+                    "Mail ID : " + mail + "<br/>" +
+                    "Phone Number : " + phone + "<br/>" +
+                    "Requirement : " + requirement + "<br/>" +
+                    "Message : " + message
+
+                console.log(body)
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username: "aishu97.svr@gmail.com",
+                    Password: "pccogafzkicbfoqa",
+                    To: 'aldenakshitha@gmail.com',
+                    From: "aishu97.svr@gmail.com",
+                    Subject: `Mail from ${firstName} ${lastName}`,
+                    Body: body
+                })
+                    .then(function (message) {
+                        console.log("mail sent======>" + message)
+                        console.log("toast clicked")
+                        btn.classList.remove('spin');
+                        btn.disabled = false;
+                        var x = document.getElementById("snackbar");
+                        x.className = "show";
+                        setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+                        document.getElementById("fname").value = ""
+                        document.getElementById("lname").value = ""
+                        document.getElementById("mail").value = ""
+                        document.getElementById("phone").value = ""
+                        document.getElementById("requirement").value = ""
+                        document.getElementById("message").value = ""
+                    });
+
+            }
+        }
+        /**
+     * Checks email if valid or not
+     * @param {string} email - email given by user
+     * @returns {boolean} true or false
+     */
+        function validateEmail(email) {
+            var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+        function removeWarning(id) {
+            console.log("remove======" + `${id}_error`)
+            document.getElementById(`${id}_error`).innerHTML = ""
+        }       
+    </script>
+</head>
+
+<body>
+    <div class="body-container">
+        <div style="background: #FEF0EF 0% 0% no-repeat;margin-left: auto;margin-right: auto;">
+            <header id="masthead" class="site-header">
+                <div>
+                    <a class="nav-link row-div" href="index.html">
+                        <img class="nav-logo" alt="logo" src="assets/img/svg/E4_Kenla System_Logo.svg" />
+                        <p class="nav-logo-text">Kenla Systems</p>
+                    </a>
+                </div>
+                <nav>
+                    <ul class="navbar">
+                        <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="technologies.html">TECHNOLOGIES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-btn" style="color: white;" href="getintouch.html">GET IN TOUCH</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-primary" style="background: #F56961" type="button" data-toggle="modal"
+                            data-target="#exampleModalLong"> <span class="dark-blue-text"><i
+                                    class="fa fa-bars"></i></span></button>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document" style="padding: 10px;">
+                <div class="modal-content" style="padding: 10px;">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="technologies.html">TECHNOLOGIES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-btn" style="color: white;" href="getintouch.html">GET IN TOUCH</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <main class="main-container">
+            <section class="bottom-image-curves">
+                <img src="./assets/img/svg/Bottom2Curves.svg" width="100%" height="100%" alt="bottomImage" />
+            </section>
+            <section>
+                <div class="contact-heading">
+                    <h3 class="contact-heading-text">Contact Us</h3>
+                    <p class="contact-subheading-text">Any Questions or Remarks ? Just Write Us A Message !</p>
+                </div>
+            </section><!-- /.section-features -->
+            <div class="container" style="flex: 1; align-items: center; width:100%">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-md-4" style="width: 320px;">
+                        <!-- Card -->
+                        <div class="bg-image card"
+                            style="display: flex;justify-content: center; margin-left: 40px; background-color: transparent; border: none;">
+                            <div
+                                style="display: flex; align-self: center; justify-content: center; border-radius: 10px; background-image: url('./assets/img/svg/contactCard.svg'); height: 500px; width: 350px; background-position: center center; background-size: cover; background-repeat: no-repeat; ">
+                                <div class="card-body text-white">
+                                    <div style="margin: 20px;">
+                                        <p class="contact-card-text">Contact information</p>
+                                        <div class="contact-div">
+                                            <div class="contact-row">
+                                                <img src="./assets/img/svg/call.svg" width="20" height="20"
+                                                    alt="call" />
+                                                <p class="contact-row-text">+91 44-43335 154</p>
+                                            </div>
+                                            <div class="contact-row">
+                                                <img src="./assets/img/svg/phone.svg" width="25" height="25"
+                                                    alt="phone" />
+                                                <p class="contact-row-mobile-text">+91 99402 18829</p>
+                                            </div>
+                                            <div class="contact-row">
+                                                <img src="./assets/img/svg/mail.svg" width="20" height="20"
+                                                    alt="mail" />
+                                                <p class="contact-row-text">inquiries@kenlasystems.com</p>
+                                            </div>
+                                            <div class="contact-row">
+                                                <img src="./assets/img/svg/mail.svg" width="20" height="20"
+                                                    alt="Address" />
+                                                <div>
+                                                    <p class="contact-row-text">No 3/2 New No 7,</p>
+                                                    <p class="contact-row-text">Kamaraj Avenue 1st Street,</p>
+                                                    <p class="contact-row-text">Adyar, Chennai - 600 020</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="contact-row-bottom">
+                                            <img src="./assets/img/svg/facebook Icon.svg" width="15" height="15"
+                                                alt="facebook" />
+                                            <img src="./assets/img/svg/instaIcon.svg" style="margin-left: 10px;"
+                                                width="15" height="15" alt="instagram" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+
+                    <div class="col-lg-7 col-xs-12 col-sm-12 col-md-12" style="width: 700px;">
+                        <!-- Card -->
+                        <div class="bg-image card"
+                            style="border-radius: 10px; display: flex; opacity: 0.9;  background-color: white; border: 2px solid #F29098; padding-bottom: 20px; position: relative;">
+                            <div class="card-body" style="display: flex;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6" style="padding-top: 1em; ">
+                                            <p class="form-label">First Name</p>
+                                            <input class="input-style" type="text" id="fname"
+                                                placeholder="First name..." onkeyup="removeWarning(this.id)" />
+                                            <p class="error" id="fname_error"></p>
+                                        </div>
+                                        <div class="col-6" style="padding-top: 1em; ">
+                                            <p class="form-label">Last Name</p>
+                                            <input class="input-style" type="text" id="lname" placeholder="Last name..."
+                                                onkeyup="removeWarning(this.id)" />
+                                            <p class="error" id="lname_error"></p>
+                                        </div>
+                                        <div class="col-6" style="padding-top: 1em; ">
+                                            <p class="form-label">Mail ID</p>
+                                            <input class="input-style" type="text" id="mail" placeholder="Mail ID..."
+                                                onkeyup="removeWarning(this.id)" />
+                                            <p class="error" id="mail_error"></p>
+                                        </div>
+                                        <div class="col-6" style="padding-top: 1em; ">
+                                            <p class="form-label">Phone</p>
+                                            <input class="input-style" type="text" id="phone" placeholder="Phone..."
+                                                onkeyup="removeWarning(this.id)" />
+                                            <p class="error" id="phone_error"></p>
+                                        </div>
+                                        <p class="form-label" style="padding-top: 1em; ">What Services do you need us to
+                                            provide you?</p>
+                                        <div class="col-6">
+                                            <input class="input-style" type="text" id="requirement"
+                                                placeholder="Requirement..." onkeyup="removeWarning(this.id)" />
+                                            <p class="error" id="requirement_error"></p>
+                                        </div>
+                                        <div class="col-6">
+                                        </div>
+                                        <div class="col-12" style="padding-top: 1em; margin-bottom: 10px;">
+                                            <p class="form-label">Message</p>
+                                            <textarea class="input-style" id="message" rows="3" placeholder="Message..."
+                                                onkeyup="removeWarning(this.id)"></textarea>
+                                            <p class="error" id="message_error"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button type="button" class="sendButton" id="toastbtn" onclick="sendEmail()">Send
+                                        Message<span class="spinner"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                </div>
+            </div>
+            <div id="snackbar">Your request sent succesfully!</div>
+        </main>
+        <div class="footer">
+        </div>
+</body>
+
+</html>

@@ -58,10 +58,10 @@
     font-family: "Impact-Regular";
     src: url("../fonts/911Fonts.com_ImpactRegular__-_911fonts.com_fonts_4mSI.ttf") format("truetype");
 }
-/* @font-face {
+@font-face {
     font-family: "Artifact-Element-Bold";
     src: url("../fonts/Artifakt-Element-Bold.otf") format("opentype");
-} */
+}
 
 
 /* CUSTOM RESETS

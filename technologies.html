@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Portfolio | Kenla Systems</title>
+    <title>Technologies | Kenla Systems</title>
 
     <meta name="description" content="">
     <meta name="author" content="">
@@ -45,12 +45,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="public/css/homeStyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
 <body>
     <div class="body-container">
-        <div style="background: #E5E8FB 0% 0% no-repeat padding-box;">
+        <div style="background: #FEF0EF 0% 0% no-repeat padding-box;">
             <header id="masthead" class="site-header">
                 <div>
                     <a class="nav-link row-div" href="index.html">
@@ -61,20 +63,22 @@
                 <nav>
                     <ul class="navbar">
                         <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
-                        <li class="nav-item"><a class="nav-link" href="technologies.html">TECHNOLOGIES</a></li>
-                        <li class="nav-item-selected"><a class="nav-link-selected">PORTFOLIO</a></li>
+                        <li class="nav-item-selected"><a class="nav-link-selected">TECHNOLOGIES</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
                         <li class="nav-item">
                             <a class="nav-link nav-btn" style="color: white;" href="getintouch.html">GET IN TOUCH</a>
                         </li>
                     </ul>
                     <div class="dropdown">
-                        <button class="btn btn-primary" style="background: #F56961" type="button" data-toggle="modal" data-target="#exampleModalLong"> <span class="dark-blue-text"><i
+                        <button class="btn btn-primary" style="background: #F56961" type="button" data-toggle="modal"
+                            data-target="#exampleModalLong"> <span class="dark-blue-text"><i
                                     class="fa fa-bars"></i></span></button>
                     </div>
                 </nav>
             </header>
         </div>
-        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
             <div class="modal-dialog" role="document" style="padding: 10px;">
                 <div class="modal-content" style="padding: 10px;">
                     <ul class="nav">
@@ -88,35 +92,44 @@
                 </div>
             </div>
         </div>
-        <main id="main" class="site-main">
-            <section class="site-section section-features">
-                <div class="body-div">
-                    <div style="padding: 20px 10%;display: flex;justify-content: space-between;">
-                        <div>
-                            <h1 class="how-text-style" style="margin: 0px;">Our Portfolio</h1>
-                            <h1 class="how-text-style" style="margin-top: 10px;font-size: large;">Government Projects -</h1>
+        <main id="main" class="technology-body-div">
+
+            <!-- <div class="container"> -->
+            <div class="technology-section">
+                <h1 class="how-text-style" style="margin: 0px;">Technologies and Platforms we work with:</h1>
+                <div style="display: flex; margin-top: 30px;">
+                    <div class="container">
+                        <div class="row image-div">
+                            <div class="col-lg-3 col-md-6 col-sm-12"
+                                style="background-color: #F5A8AE; border-radius: 8px; padding: 25px 0 25px 15px; z-index: 2;">
+                                <div id="buttonText"></div>
+                            </div>
+                            <div class="col-lg-8 col-md-12 col-sm-12"
+                                style="background-color:#fff; border-radius: 8px; border: 2px solid #F5A8AE; margin-left: -10px; z-index: 1;">
+                                <div class="image-main-div">
+                                    <div id="title" class="image-div"></div>
+                                    <div id="imageText" class="image-div"></div>
+                                    <div id="imageText1" class="image-div"></div>
+                                </div>
+                            </div>
                         </div>
-                        <img alt="dot-3" src="public/img/svg/E9_Seperate Dot.svg" class="dot-e-style" />
-                    </div>
-                    <div class="container back-img">
-                        <div style="padding: 0px 10%">
-                        <div class="col-md-6 col-lg-5 col-sm-12 card-div">
-                            <img alt="we-dev" width="100%" height="100%" src="public/img/svg/E5_home.svg" />
-                            <p class="serv-text-style">IVV</p>
-                        </div>
-                        <div class="col-md-6 col-lg-5 col-sm-12 card-div">
-                            <img alt="we-dev" width="100%" height="100%" src="public/img/svg/E5_home.svg" />
-                            <p class="serv-text-style">IPOR</p>
-                        </div>
-                    </div>
-                        <img alt="dot-3" src="public/img/svg/E9_Seperate Dot.svg" class="dot-f-style" />
                     </div>
                 </div>
-            </section>
+                <div class="top-dot-image">
+                    <img alt="dot-3" src="public/img/svg/E8_Separate Dot.svg" class="dot-e-topStyle" />
+                </div>
+            </div>
+            <div class="container bottom-dot-image">
+                <section class="bottom-image-curves">
+                    <img src="./public/img/svg/Bottom2Curves.svg" width="100%" height="100%" alt="bottomImage" />
+                </section>
+                <img alt="dot-3" src="public/img/svg/E8_Separate Dot.svg" class="dot-f-style"  />
+            </div>
+            <!-- </div> -->
+
             <!-- /.section-features -->
-            <div class="footer" >
-                <!-- <img alt="we-dev" width="100%" height="100%" src="public/img/svg/footer.svg" />-->
-                
+            <div class="footer">
+                <!-- <img alt="we-dev" width="100%" height="100%" src="public/img/svg/footer.svg" />  -->
                 <div class="container-fluid" style="padding: 8px 10px">
                     <div class="row" style="display: flex; justify-content: center; align-items: flex-start; font-size: 12px; ">
                       <div class="col-md-3 col-lg-3 col-sm-12" style="color: #fff;  display: flex; flex-direction: row; ">
@@ -155,11 +168,56 @@
                         </div>
                       </div>
                     </div>
-                  </div>   
-                </div>
-                 </div>
+                  </div>  
+            </div>
         </main>
     </div>
+    <script>
+        var technologiesArray = ["WEB", "MOBILE", "BACKEND", "PLATFORMS", "LANGUAGES", "DATABASES", "BIG DATAS", "MACHINES", "BLOCK CHAINS", "CLOUD"]
+        var newTechnologiesArray = [];
+        var imageArray = {
+            "WEB": ["public/img/tech/WebTech/angular.png","public/img/tech/WebTech/css.png", "public/img/tech/WebTech/html.png", "public/img/tech/WebTech/javascript.png", "public/img/tech/WebTech/nextjs.png", "public/img/tech/WebTech/react.png", "public/img/tech/WebTech/xml.png"],
+            "MOBILE": ["public/img/tech/MobileTech/android.png", "public/img/tech/MobileTech/cordova.png", "public/img/tech/MobileTech/ios.png", "public/img/tech/MobileTech/reactnative.png"],
+            "BACKEND": ["public/img/tech/BackEnd/nodeJs.png", "public/img/tech/BackEnd/play.png", "public/img/tech/BackEnd/rails.png"],
+            "PLATFORMS": ["public/img/svg/android.svg", "public/img/svg/ios.svg"],
+            "LANGUAGES": ["public/img/tech/Languages/c.jpeg", "public/img/tech/Languages/dotnet.png", "public/img/tech/Languages/java.png", "public/img/tech/Languages/javascript.png", "public/img/tech/Languages/objective.png", "public/img/tech/Languages/ruby.png", "public/img/tech/Languages/scala.png", "public/img/tech/Languages/swift.jpeg", "public/img/tech/Languages/visualbasic.png"],
+            "DATABASES": ["public/img/tech/Databases/arangodb.png", "public/img/tech/Databases/mongodb.png", "public/img/tech/Databases/mysql.png", "public/img/tech/Databases/orientdb.png", "public/img/tech/Databases/postgresql.png", "public/img/tech/Databases/sqllite.jpeg", "public/img/tech/Databases/sqlserver.jpeg"],
+            "BIGDATAS": ["public/img/tech/BigData/bigdata.png"],
+            "MACHINES": ["public/img/svg/android.svg", "public/img/svg/ios.svg"],
+            "BLOCKCHAINS": ["public/img/tech/BlockChain/blockchain.png"],
+            "CLOUD": ["public/img/tech/Cloud/aws.png", "public/img/tech/Cloud/digitalocean.png"],
+        }
+        for (var i = 0; i < technologiesArray.length; i++) {
+            document.getElementById("buttonText").innerHTML += `<button class=technology-button id=${technologiesArray[i]}  onclick=handleTechnologies(this.id)>${technologiesArray[i]}</button><br/>`
+        }
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.getElementById(`${technologiesArray[0]}`).focus();
+            handleTechnologies(technologiesArray[0])
+        });
+        function handleTechnologies(param) {
+            if (param !== undefined) {
+                console.log("*****param*******"+param)
+                let name = param === "BIG" ? "BIGDATAS" : param === "BLOCK" ? "BLOCKCHAINS" : param
+                let title = param === "BIG" ? "BIG DATAS" : param === "BLOCK" ? "BLOCK CHAINS" : param
+                document.getElementById("imageText").innerHTML = null
+                var re = Object.values(imageArray[name])
+                document.getElementById("title").innerHTML = `<p class=image-container-title>${title}</p>`
+                document.getElementById("imageText").innerHTML = null;
+                document.getElementById("imageText1").innerHTML = null;
+                for (var i = 0; i < re.length; i++) {
+                   if(i<= 5){
+                    document.getElementById("imageText").innerHTML += `<div class=image-container><img src=${re[i]} width="45" height="45"
+                                                    alt=${i} /></div>`
+                   }
+                   else{
+                    document.getElementById("imageText1").innerHTML += `<div class=image-container><img src=${re[i]} width="45" height="45"
+                                                    alt=${i} /></div>`
+                   }
+                    
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

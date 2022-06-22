@@ -86,22 +86,6 @@
     font-family: "Poppins-SemiBold";
     src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
 }
-@font-face {
-    font-family: "Century-Gothic-Regular";
-    src: url("../fonts/911Fonts.com_CenturyGothicRegular__-_911fonts.com_fonts_mhpY.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Century-Gothic-Bold";
-    src: url("../fonts/911Fonts.com_CenturyGothicBold__-_911fonts.com_fonts_pMgo.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Impact-Regular";
-    src: url("../fonts/911Fonts.com_ImpactRegular__-_911fonts.com_fonts_4mSI.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Artifact-Element-Bold";
-    src: url("../fonts/Artifakt-Element-Bold.otf") format("opentype");
-}
 
 a {
     transition: all 0.25s ease-in-out;
@@ -231,41 +215,9 @@ a:hover {
 }
 .footer {
     background: #282834;     
-    /* height: 80vh; */
+    height: 100px;
     width: 100%;  
-  /* padding: 20px 0px;  */
-}
-.service-style{
-    font-size: 15px;
-    padding-top: 10px;
-    font-family: Century-Gothic-Bold;
-}
-
-@media (max-width:768px) {
-    .service-style{
-        font-size: 15px;
-        padding-top: 10px;
-        text-align: center;
-        font-family: Century-Gothic-Bold;
-    }
-}
-
-.tech-style {
-    margin: 0; 
-    font-size: 15px; 
-    padding-top: 10px;
-    font-family: Century-Gothic-Bold;
-}
-
-@media (max-width:768px) {
-    .tech-style {
-        margin: 0; 
-        font-size: 15px; 
-        padding: 10px 10px 0px 10px;
-        text-align: center;
-        font-family: Century-Gothic-Bold;
-        
-    }
+    padding: 40px 0px; 
 }
 .nav-logo-text-color {
     color: #fff;

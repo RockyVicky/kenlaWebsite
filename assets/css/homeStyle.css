@@ -46,22 +46,6 @@
     font-family: "BreeSerif-Regular";
     src: url("../fonts/BreeSerif-Regular.ttf") format("truetype");
 }
-@font-face {
-    font-family: "Century-Gothic-Regular";
-    src: url("../fonts/911Fonts.com_CenturyGothicRegular__-_911fonts.com_fonts_mhpY.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Century-Gothic-Bold";
-    src: url("../fonts/911Fonts.com_CenturyGothicBold__-_911fonts.com_fonts_pMgo.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Impact-Regular";
-    src: url("../fonts/911Fonts.com_ImpactRegular__-_911fonts.com_fonts_4mSI.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Artifact-Element-Bold";
-    src: url("../fonts/Artifakt-Element-Bold.otf") format("opentype");
-}
 
 
 /* CUSTOM RESETS
@@ -79,38 +63,6 @@
 @media (max-width:550px) {
     .body-container {
         padding: 0% 0%;
-    }
-}
-.service-style{
-    font-size: 15px;
-    padding-top: 10px;
-    font-family: Century-Gothic-Bold;
-}
-
-@media (max-width:768px) {
-    .service-style{
-        font-size: 15px;
-        padding-top: 10px;
-        text-align: center;
-        font-family: Century-Gothic-Bold;
-    }
-}
-
-.tech-style {
-    margin: 0; 
-    font-size: 15px; 
-    padding-top: 10px;
-    font-family: Century-Gothic-Bold;
-}
-
-@media (max-width:768px) {
-    .tech-style {
-        margin: 0; 
-        font-size: 15px; 
-        padding: 10px 10px 0px 10px;
-        text-align: center;
-        font-family: Century-Gothic-Bold;
-        
     }
 }
 
@@ -398,7 +350,7 @@
 .footer {
     background: #282834;
     width: 100%;
-    /* height: 125px; */
+    height: 100px;
 }
 
 .body-div {
@@ -451,7 +403,7 @@
     width: 200px;
     height: 200px;
     padding: 25px;
-    left: 10px;
+    margin-left: -100px;
 }
 
 @media (max-width:900px) {
@@ -463,11 +415,10 @@
 .back-img {
     width: auto;
     margin-top: -70px;
-    padding: 15px ;
+    padding: 15px 10%;
     background-image: url(../img/svg/E7_Bottom.svg);
     background-repeat: no-repeat;
     background-position: bottom;
-    
 }
 
 @media (max-width:900px) {
@@ -515,7 +466,7 @@
   -ms-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-  / margin-top: 50% !important; /
+  /* margin-top: 50% !important; */
   /* -webkit-animation: beat 0.2s ease-in-out forwards;
           animation: beat 0.2s ease-in-out forwards;  */
 }
@@ -552,7 +503,7 @@
     right: 0
 }
 .bottom-dot-image {
-    padding: 15px; 
+    padding: 15px 10%; 
     width: 100%; 
     position: relative;
 }

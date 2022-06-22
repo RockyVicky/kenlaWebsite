@@ -1,0 +1,73 @@
+<svg id="Footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="200" viewBox="0 0 1920 200">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f6ba29"/>
+      <stop offset="0.23" stop-color="#f4a832"/>
+      <stop offset="0.68" stop-color="#ee7a48"/>
+      <stop offset="1" stop-color="#e95559"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0" y1="0.5" y2="0.5" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="0" y1="0.5" y2="0.5" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-10" x1="0" y1="0.5" x2="0.999" y2="0.5" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-11" x1="0.932" y1="0.25" x2="0.068" y2="0.75" xlink:href="#linear-gradient"/>
+  </defs>
+  <rect id="Bottom_CONTACT" width="1920" height="200" fill="#282834"/>
+  <g id="LOGO_AND_KENLA_SYSTEMS" data-name="LOGO AND KENLA SYSTEMS" transform="translate(-43 6.754)">
+    <text id="Kenla_Systems" data-name="Kenla Systems" transform="translate(165 73)" fill="#fff" font-size="45" font-family="Impact" letter-spacing="0.2em"><tspan x="0" y="0">Kenla Systems</tspan></text>
+  </g>
+  <g id="LOGO_AND_KENLA_SYSTEMS-2" data-name="LOGO AND KENLA SYSTEMS" transform="translate(386 -16.246)">
+    <text id="SERVICES:" transform="translate(165 73)" fill="#fff" font-size="24" font-family="CenturyGothic-Bold, Century Gothic" font-weight="700"><tspan x="0" y="0">SERVICES:</tspan></text>
+  </g>
+  <g id="LOGO_AND_KENLA_SYSTEMS-3" data-name="LOGO AND KENLA SYSTEMS" transform="translate(386 15.754)">
+    <text id="Mobile_Application" data-name="Mobile Application" transform="translate(165 73)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">Mobile Application</tspan></text>
+    <text id="Big_Data_Services" data-name="Big Data Services" transform="translate(165 99)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">Big Data Services</tspan></text>
+    <text id="Web_Development" data-name="Web Development" transform="translate(165 125)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">Web Development</tspan></text>
+    <text id="AI_and_ML_development_services" data-name="AI and ML development services" transform="translate(165 151)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">AI and ML development services</tspan></text>
+  </g>
+  <g id="LOGO_AND_KENLA_SYSTEMS-4" data-name="LOGO AND KENLA SYSTEMS" transform="translate(937 15.754)">
+    <text id="React_AngularJS_HRML5" data-name="React, AngularJS, HRML5" transform="translate(165 73)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">React, AngularJS, HRML5</tspan></text>
+    <text id="React_Native_iOS_Android" data-name="React Native, iOS, Android" transform="translate(165 99)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">React Native, iOS, Android</tspan></text>
+    <text id="NordJS_ASP.Net_Play_Scala_Rails" data-name="NordJS, ASP.Net, Play, Scala, Rails" transform="translate(165 125)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">NordJS, ASP.Net, Play, Scala, Rails</tspan></text>
+    <text id="JavaScript_Swift_Java_Scala_Elixir_Rubi_C_C_Objective-C" data-name="JavaScript, Swift, Java, Scala, Elixir, Rubi, C &amp; C++, Objective-C" transform="translate(165 151)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">JavaScript, Swift, Java, Scala, Elixir, Rubi, C &amp; C++, Objective-C</tspan></text>
+  </g>
+  <g id="LOGO_AND_KENLA_SYSTEMS-5" data-name="LOGO AND KENLA SYSTEMS" transform="translate(1210 15.754)">
+    <text id="_ProstgreSQL_MyDQL_SQL_Server" data-name=", ProstgreSQL, MyDQL, SQL Server" transform="translate(111 73)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">, ProstgreSQL, MyDQL, SQL Server</tspan></text>
+    <text id="_Hadroop_Apache_Spark_Oracle" data-name=", Hadroop, Apache Spark, Oracle" transform="translate(126 99)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">, Hadroop, Apache Spark, Oracle</tspan></text>
+    <text id="_AWS_Azure_GCP_Ethereum" data-name=", AWS, Azure, GCP, Ethereum" transform="translate(185 125)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">, AWS, Azure, GCP, Ethereum</tspan></text>
+  </g>
+  <g id="LOGO_AND_KENLA_SYSTEMS-6" data-name="LOGO AND KENLA SYSTEMS" transform="translate(937 -16.246)">
+    <text id="TECHNOLOGIES:" transform="translate(165 73)" fill="#fff" font-size="24" font-family="CenturyGothic-Bold, Century Gothic" font-weight="700"><tspan x="0" y="0">TECHNOLOGIES:</tspan></text>
+  </g>
+  <g id="LOGO_AND_KENLA_SYSTEMS-7" data-name="LOGO AND KENLA SYSTEMS" transform="translate(1560 -16.246)">
+    <text id="GET_IN_TOUCH" data-name="GET IN TOUCH" transform="translate(165 73)" fill="#fff" font-size="24" font-family="CenturyGothic-Bold, Century Gothic" font-weight="700"><tspan x="0" y="0">GET IN TOUCH</tspan></text>
+  </g>
+  <g id="KenlaSystems_Logo_Square" transform="translate(22 23.508)">
+    <g id="NEW_LOGO" data-name="NEW LOGO">
+      <path id="Path_1413" data-name="Path 1413" d="M78.879,168.67l22.357-22.361.059.057.349-.291.464-.115.464.057.408.174.347.349.174.406.059.466-.117.464-.291.349h.059L80.8,170.644v-.057l-.349.289-.464.117-.464-.057-.406-.174-.349-.349-.174-.406-.059-.466.117-.464.291-.349" transform="translate(-62.968 -117.036)" fill="url(#linear-gradient)"/>
+      <path id="Path_1414" data-name="Path 1414" d="M193.915,179.408l-.349.289-.466.117-.464-.057-.406-.174-.349-.349-.174-.406-.057-.466.117-.464.289-.349H192l6.91-6.912.057-.057,1.916,1.916v-.161l-7.346,7.348" transform="translate(-153.672 -136.777)" fill="url(#linear-gradient)"/>
+      <path id="Path_1415" data-name="Path 1415" d="M113.816,231.462l-.291.349-.115.466.057.464.174.406.349.349.406.174.464.057.466-.115.349-.291,27-27.006v-.059l.289-.349.117-.464-.057-.466-.174-.406-.349-.349-.406-.174-.466-.057-.464.117-.349.289h-.057l-27,27.008" transform="translate(-90.936 -163.566)" fill="url(#linear-gradient)"/>
+      <path id="Path_1416" data-name="Path 1416" d="M280.379,202.985l-6.912,6.912h.059l-.291.349-.115.464.057.466.174.406.349.349.406.174.464.057.466-.117.347-.289v.057l9.524-9.524v-.059l-2.206.466-2.322.232" transform="translate(-218.997 -162.155)" fill="url(#linear-gradient-4)"/>
+      <path id="Path_1417" data-name="Path 1417" d="M158.8,87.642l6.91-6.912.232-2.323.464-2.208-9.524,9.526v.057l-.289.349-.117.466.059.464.174.406.347.349.408.174.464.057.466-.115.347-.291" transform="translate(-125.471 -61.1)" fill="url(#linear-gradient-5)"/>
+      <path id="Path_1418" data-name="Path 1418" d="M143.331,139.676l-.057-.406-.232-.406-.291-.291-.406-.174-.466-.057-.406.117-.406.232-.232.349-.174.406v.464l.174.406.232.349.406.234.406.115.466-.057.406-.174.291-.291.232-.406.057-.406Z" transform="translate(-112.786 -110.926)" fill="url(#linear-gradient)"/>
+      <path id="Path_1419" data-name="Path 1419" d="M259.671,256.326l-.059-.406-.232-.406-.289-.291-.406-.174-.466-.057-.406.115-.406.234-.232.349-.174.406v.464l.174.406.232.349.406.232.406.117.466-.057.406-.174.289-.291.232-.406.059-.406Z" transform="translate(-206.071 -204.46)" fill="url(#linear-gradient)"/>
+      <path id="Path_1420" data-name="Path 1420" d="M65.381,275.966l-.057-.408-.232-.406-.291-.289-.406-.174-.466-.057-.406.115-.406.232-.232.349-.174.406v.466l.174.406.232.349.406.232.406.117.466-.059.406-.172.291-.291.232-.406.057-.406Z" transform="translate(-50.283 -220.208)" fill="url(#linear-gradient)"/>
+      <path id="Path_1421" data-name="Path 1421" d="M99.961,357.736l-.057-.406-.234-.406-.289-.291-.406-.174-.466-.057-.406.115-.406.234-.232.349-.174.406v.464l.174.406.232.349.406.232.406.117.466-.057.406-.174.289-.291.234-.406.057-.406Z" transform="translate(-78.01 -285.774)" fill="url(#linear-gradient)"/>
+      <path id="Path_1422" data-name="Path 1422" d="M178.493,221.156l-.059-.406-.232-.406-.291-.291-.406-.174-.464-.057-.406.115-.406.234-.234.349-.174.406v.464l.174.406.234.349.406.232.406.117.464-.057.406-.174.291-.291.232-.406.059-.406Z" transform="translate(-140.978 -176.259)" fill="url(#linear-gradient-10)"/>
+      <path id="Path_1423" data-name="Path 1423" d="M243.547,20.387l-.057-1.744-.232-1.684-.349-1.684-.523-1.684-.638-1.625-.814-1.51-.87-1.51-1.046-1.4-1.161-1.278-1.219-1.161-1.336-1.1-1.453-.987-1.51-.812-1.567-.755L229.146.872,227.462.466,225.777.174,224.035,0h-1.742l-1.742.174-1.684.291-1.684.406-1.627.581-1.567.755-1.51.812-1.451.987-1.336,1.1-1.221,1.161L207.31,7.55l-1.044,1.4-.872,1.51-.812,1.51-.638,1.625-.523,1.684-.349,1.684-.232,1.684-.059,1.744.059,1.742.232,1.684.349,1.684.523,1.684.638,1.625.812,1.51.872,1.51,1.044,1.4,1.161,1.278,1.221,1.161,1.336,1.1,1.451.987,1.51.812,1.567.755,1.627.581,1.684.408,1.684.289,1.742.174h1.742l1.742-.174,1.684-.289,1.684-.408,1.625-.581,1.567-.755,1.51-.812,1.453-.987,1.336-1.1,1.219-1.161,1.161-1.278,1.046-1.4.87-1.51.814-1.51.638-1.625.523-1.684.349-1.684.232-1.684.057-1.742Z" transform="translate(-162.596)" fill="url(#linear-gradient-11)"/>
+      <path id="Path_1424" data-name="Path 1424" d="M77.118,78.537l-.638.929-.755.87-.872.755-.987.7-1.046.581-1.219.466-1.278.349-1.393.289-1.51.174-1.51.057-1.625-.057L62.6,83.473l-1.742-.289-1.8-.408-1.8-.464L55.4,81.731l-1.8-.7-1.859-.755-1.8-.812-1.916-.929L46.167,77.49l-1.976-1.1-1.916-1.219L40.358,73.89,38.385,72.5l-1.859-1.453-1.916-1.51-1.8-1.567-1.8-1.627-1.682-1.684-1.684-1.742-1.51-1.684-1.51-1.744-1.393-1.742L21.951,56,20.79,54.259l-1.1-1.684L18.7,50.891l-.929-1.742L16.9,47.4l-.7-1.684-.64-1.684-.521-1.684-.466-1.684L14.286,39.1l-.174-1.567V36.08l.057-1.453.174-1.278.291-1.276.464-1.161.523-1.046.638-.987.7-.872.406-.406.232-.174.057-.057.059-.059-.117-.057-1.742-.174-1.742-.117-1.684.059-1.625.115-1.569.291-1.451.349-1.4.581-1.276.638-1.1.814-1.044.929-.872,1.044-.7,1.161L.812,34.221.406,35.673.117,37.124,0,38.751v1.684l.174,1.742.349,1.8.406,1.8.581,1.857.7,1.918.812,1.916.87,1.859.987,1.916L6.04,57.22l1.219,2.033,1.393,2.033,1.51,2.091,1.627,2.15,1.742,2.148,1.859,2.148,1.974,2.15,2.091,2.091L21.6,76.155l2.208,2.033,2.323,1.976,2.323,1.916,2.38,1.8,2.382,1.744,2.38,1.625,2.439,1.51,2.323,1.4,2.382,1.278,2.265,1.219L47.27,93.7l2.148.929,2.091.812,2.031.7,2.033.581,1.974.521,1.976.406,1.916.291,1.916.117,1.8.057,1.742-.057,1.627-.232,1.567-.408,1.453-.464,1.336-.64,1.161-.812,1.044-.87.929-1.046.755-1.1L77.35,91.2l.466-1.336.289-1.453.174-1.51.057-1.567L78.222,83.7,77.99,82.02l-.349-1.742-.523-1.742Z" transform="translate(0 -21.617)" fill="#4d4854" stroke="#212831" stroke-linecap="square" stroke-miterlimit="10" stroke-width="0"/>
+      <path id="Path_1425" data-name="Path 1425" d="M123.1,43.818l-.929,2.033-.7,2.148-3.658,3.66-1.51-.523-1.51-.349-1.51-.349-1.451-.174-1.4-.057-1.336.057-1.276.174-1.161.291-1.046.406-.987.581-.812.64-.7.755-.581.812-.466.929-.347.987-.174,1.046-.581-1.976-.174-.987L100.627,53l-.057-.929-.059-.929v-.929l.117-.872.117-.87.172-.814.291-.812.291-.755.406-.7.464-.638.523-.638.523-.523.638-.523.7-.464.755-.406.753-.349.814-.234.87-.232.929-.174.929-.115.987-.059h.987l1.046.059,1.044.115,2.091.291,2.15.523,1.219.406,1.219.406,1.278.464Z" transform="translate(-80.592 -32.899)" fill="#393644" stroke="#212831" stroke-linecap="square" stroke-miterlimit="10" stroke-width="0"/>
+      <path id="Path_1426" data-name="Path 1426" d="M307.99,191.737l.814,2.033.581,2.033.289.987.174.989.117.987.115.987v1.859l-.115.872-.174.87-.232.814-.291.755-.349.755-.406.7-.464.64-.523.581-.581.523-.7.464-.638.464-.755.349-.812.349-.814.232-.87.174-.872.174-.927.117h-1.918l-.927-.057-2.033-.234.87-.289.755-.406.755-.466.7-.523.581-.638.523-.7.406-.755.349-.87.289-.929.117-.989.117-1.044-.059-1.046-.115-1.161-.234-1.161-.347-1.161-.349-1.221L303,193.83l-.057-.059,1.742-.581,1.684-.7,1.567-.812" transform="translate(-237.086 -153.696)" fill="#393644" stroke="#212831" stroke-linecap="square" stroke-miterlimit="10" stroke-width="0"/>
+    </g>
+  </g>
+  <text id="Cloud_App_Development_services" data-name="Cloud App Development services" transform="translate(753 88.754)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">Cloud App Development services</tspan></text>
+  <text id="Blockchain_integrated_services" data-name="Blockchain integrated services" transform="translate(753 117)" fill="#fff" font-size="18" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">Blockchain integrated services</tspan></text>
+  <path id="Icon_feather-facebook" data-name="Icon feather-facebook" d="M27,3H22.5A7.5,7.5,0,0,0,15,10.5V15H10.5v6H15V33h6V21h4.5L27,15H21V10.5A1.5,1.5,0,0,1,22.5,9H27Z" transform="translate(1778.5 69)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <g id="Icon_feather-instagram" data-name="Icon feather-instagram" transform="translate(1853 69)">
+    <path id="Path_1404" data-name="Path 1404" d="M10.5,3h15A7.5,7.5,0,0,1,33,10.5v15A7.5,7.5,0,0,1,25.5,33h-15A7.5,7.5,0,0,1,3,25.5v-15A7.5,7.5,0,0,1,10.5,3Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_1405" data-name="Path 1405" d="M24,17.055A6,6,0,1,1,18.945,12,6,6,0,0,1,24,17.055Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_1406" data-name="Path 1406" d="M26.25,9.75h0" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+  <text id="No_3_2_New_No_7_Second_floor_Kamaraj_Ave_1st_St_Adyar_Chennai_Tamil_Nadu_600020" data-name="No 3/2 New No 7 Second floor,
+Kamaraj Ave 1st St, Adyar,
+Chennai, Tamil Nadu 600020" transform="translate(122 117)" fill="#fff" font-size="24" font-family="ArtifaktElement-Bold, Artifakt Element" font-weight="700"><tspan x="0" y="0">No 3/2 New No 7 Second floor,</tspan><tspan x="0" y="33">Kamaraj Ave 1st St, Adyar,</tspan><tspan x="0" y="66">Chennai, Tamil Nadu 600020</tspan></text>
+</svg>

@@ -451,7 +451,7 @@
 }
 
 .dot-f-style {
-    width: 200px;
+    width: 150px;
     height: 200px;
     padding: 25px;
     left: 10px;
@@ -558,5 +558,14 @@
     padding: 15px; 
     width: 100%; 
     position: relative;
+}
+.example{
+    padding: 0px 15%;
+    overflow-y: auto; 
+    height: 400px;
+    
+}
+.example::-webkit-scrollbar {
+    display: none;
 }
 

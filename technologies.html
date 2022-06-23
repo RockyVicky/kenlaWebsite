@@ -56,8 +56,8 @@
             <header id="masthead" class="site-header">
                 <div>
                     <a class="nav-link row-div" href="index.html">
-                        <img class="nav-logo" alt="logo" src="assets/img/svg/E4_Kenla System_Logo.svg" />
-                        <p class="nav-logo-text">Kenla Systems</p>
+                        <img class="nav-logo" alt="logo" src="assets/img/svg/Header Logo_KenlaSystem.svg" style="width: 60%; height: 60%;"   />
+                        <!-- <p class="nav-logo-text">Kenla Systems</p> -->
                     </a>
                 </div>
                 <nav>
@@ -175,6 +175,7 @@
     <script>
         var technologiesArray = ["WEB", "MOBILE", "BACKEND", "PLATFORMS", "LANGUAGES", "DATABASES", "BIG DATAS", "MACHINES", "BLOCK CHAINS", "CLOUD"]
         var newTechnologiesArray = [];
+
         var imageArray = {
             "WEB": ["assets/img/tech/WebTech/angular.png","assets/img/tech/WebTech/css.png", "assets/img/tech/WebTech/html.png", "assets/img/tech/WebTech/javascript.png", "assets/img/tech/WebTech/nextjs.png", "assets/img/tech/WebTech/react.png", "assets/img/tech/WebTech/xml.png"],
             "MOBILE": ["assets/img/tech/MobileTech/android.png", "assets/img/tech/MobileTech/cordova.png", "assets/img/tech/MobileTech/ios.png", "assets/img/tech/MobileTech/reactnative.png"],
@@ -196,6 +197,7 @@
         });
         function handleTechnologies(param) {
             if (param !== undefined) {
+                // let sampleArray = [];
                 console.log("*****param*******"+param)
                 let name = param === "BIG" ? "BIGDATAS" : param === "BLOCK" ? "BLOCKCHAINS" : param
                 let title = param === "BIG" ? "BIG DATAS" : param === "BLOCK" ? "BLOCK CHAINS" : param
@@ -206,15 +208,21 @@
                 document.getElementById("imageText1").innerHTML = null;
                 for (var i = 0; i < re.length; i++) {
                    if(i<= 5){
+                    // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
+                    //                                 alt=${i} /></div>`)
                     document.getElementById("imageText").innerHTML += `<div class=image-container><img src=${re[i]} width="45" height="45"
                                                     alt=${i} /></div>`
                    }
                    else{
                     document.getElementById("imageText1").innerHTML += `<div class=image-container><img src=${re[i]} width="45" height="45"
                                                     alt=${i} /></div>`
+                    // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
+                    // alt=${i} /></div>`)
                    }
                     
                 }
+                // document.getElementById("imageText1").innerHTML = sampleArray
+                
             }
         }
     </script>

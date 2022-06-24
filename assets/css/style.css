@@ -159,8 +159,8 @@ a:hover {
 
 .nav-logo-text {
     font-size: 28px;
-    font-family: BreeSerif-Regular;
-    letter-spacing: 1px;
+    font-family: Impact-Regular;
+    letter-spacing: 6px;
     color: #393643;
     margin-bottom: 0px;
 }
@@ -545,3 +545,25 @@ textarea {
   *, *::before, *::after {
     box-sizing: border-box;
   }
+  .testStyleNew{
+    height: 350px; 
+    border-radius: 10px; 
+    background-color: #D9DEFE; 
+    margin-bottom: 20px; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+}
+@media (max-width:768px) {
+    .testStyleNew {
+        height: 700px;
+        border-radius: 10px; 
+        background-color: #D9DEFE; 
+        margin-bottom: 20px; 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center;
+    }
+}

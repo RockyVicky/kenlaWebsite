@@ -52,11 +52,11 @@
     <div class="body-container">
         <div style="background: #E5E8FB 0% 0% no-repeat padding-box;">
             <header id="masthead" class="site-header">
-                <div>
+                <div style="display:flex; flex-direction: row; justify-content: center; align-items: center;">
                     <a class="nav-link row-div" href="index.html">
-                        <!-- <img class="nav-logo" alt="logo" src="assets/img/svg/Header Logo_KenlaSystem.svg" style="width: 60%; height: auto;" /> -->
-                        <!-- <p class="nav-logo-text">Kenla Systems</p> -->
+                    <img class="nav-logo" alt="logo" src="assets/img/svg/NEW LOGO.svg" class="header-logo-image"/>
                     </a>
+                     <p class="nav-logo-text">Kenla Systems</p>
                 </div>
                 <nav>
                     <ul class="navbar">
@@ -104,8 +104,8 @@
 
                     <div class="container back-img">
 
-                        <div class="container example" style="height:700px;">
-                             <div id = "test" />
+                        <div class="container example" style="height:700px; width: auto;">
+                             <div id = "test"/>
                              </div>
                                
                             
@@ -274,7 +274,7 @@
                                    "document management of formal submitted report"+
                                    "documents available. IV&V was developed for Galaxy"+
                                    "Solutions, California and used by State of California, USA." },
-                    {title:"E-Commerce Project",imageUrl:"assets/img/svg/E-CommerceProject.svg", header: "FreshFins", projectDescription: `FreshFins is an eCommerce based Web and Mobile
+                                   {title:"E-Commerce Project",imageUrl:"assets/img/svg/E-CommerceProject.svg", header: "FreshFins", projectDescription: `FreshFins is an eCommerce based Web and Mobile
                                     application that helps in delivering fresh sea food and
                                     chicken to customers in Chennai area online (and offline via
                                     orders placed directly at FreshFins's flasgship store). Kenla
@@ -287,34 +287,37 @@
                                     FreshFins URL : https://www.freshfins.in `},
                     {title:"Education Project",imageUrl:"assets/img/svg/CampusManagement.svg", header: "Campus Management System" ,projectDescription:  `The CMS(Campus Management System)isasuite of Web
                                     applications developed for Sri Venkateswara Engineering in
-                                    Sriperumbudur,Chennai.The suite includes modules that
-                                    manage Admissions,Academics,Fee,Exams,Attendance
-                                    (for both Staff and Students),Leave(Staff&Students),Hostel,
-                                    Transport,Asset,Alumni and Placement apart from specific
+                                    Sriperumbudur, Chennai. The suite includes modules that
+                                    manage Admissions, Academics, Fee, Exams, Attendance
+                                    (for both Staff and Students), Leave(Staff&Students), Hostel,
+                                    Transport, Asset, Alumni and Placement apart from specific
                                     modules for students including Student Portal and Campus
                                     social networking.
                                     The CMS was built asahighly customizable solution to meet
-                                    all the needs of SVCE College` },
+                                    all the needs of SVCE College`
+                                     },
                     {title:"Education Project",imageUrl:"assets/img/svg/PortfolioPage_Project.svg", header: "Campus Management System" ,projectDescription:  `The CMS(Campus Management System)isasuite of Web
                                     applications developed for Sri Venkateswara Engineering in
                                     Sriperumbudur,Chennai.The suite includes modules that
-                                    manage Admissions,Academics,Fee,Exams,Attendance
-                                    (for both Staff and Students),Leave(Staff&Students),Hostel,
-                                    Transport,Asset,Alumni and Placement apart from specific
+                                    manage Admissions, Academics, Fee, Exams, Attendance
+                                    (for both Staff and Students), Leave(Staff&Students), Hostel,
+                                    Transport, Asset, Alumni and Placement apart from specific
                                     modules for students including Student Portal and Campus
                                     social networking.
                                     The CMS was built asahighly customizable solution to meet
-                                    all the needs of SVCE College` }] 
+                                    all the needs of SVCE College` }
+                    
+                ] 
         for (var i = 0; i < tech.length; i++) {
             console.log(tech[i].imageUrl);
-        document.getElementById("test").innerHTML += `<div  class="row" style=" height: 250px; border-radius: 10px; background-color: #D9DEFE; margin-bottom: 20px; display: flex; flex-direction: row; justify-content: center; align-items: center; ">
+        document.getElementById("test").innerHTML += `<div  class="row testStyleNew">
                                                         <p style="font-family: Arial-Rounded-MT-Bold; font-size: 20px; padding-left: 3%;">${tech[i].title}</p>
-                                                            <div class="col-5" style="padding-bottom: 20px">
+                                                            <div class="col-md-4 col-lg-4 col-sm-12" style="padding-bottom: 20px">
                                                                  <img alt=$"dot-3" src=${tech[i].imageUrl} style="height; width: 100%;" />
                                                             </div>
-                                                            <div class="col-7" style="padding-bottom: 20px">
-                                                                <div style="font-weight: bold ;">${tech[i].header}</div>
-                                                                ${tech[i].projectDescription}
+                                                            <div class="col-md-8 col-lg-8 col-sm-12" style="padding-bottom: 20px">
+                                                                <div class="col-sm-12"  style="font-weight: bold; ">${tech[i].header}</div>
+                                                                <div class="col-sm-12" style="text-align: justify; text-justify: auto;">${tech[i].projectDescription}</div>
                                                             </div>
                                                       </div> `
         }

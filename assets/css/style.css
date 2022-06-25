@@ -303,7 +303,8 @@ a:hover {
     background: #FEF0EF 0% 0% no-repeat padding-box;
     position: relative;  
     flex-direction: column;
-    overflow: hidden;      
+    overflow: hidden; 
+         
 }
 .bottom-image-curves {
    position: absolute; 

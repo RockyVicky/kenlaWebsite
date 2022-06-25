@@ -2003,6 +2003,11 @@ pre code {
         width: 1170px
     }
 }
+/* @media (max-width:2600px) {
+    .container {
+        width: 2870px
+    }
+} */
 
 .container-fluid {
     padding-right: 15px;

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send Mail with SMTPJS Api</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+<form method="post">
+         <input type="button"value="Send Email"onclick="sendEmail()"/>
+</form>
+<script type="text/javascript">
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    // port : 2525,
+    Username : "raakeshofficial777@gmail.com",
+    Password : "OE8B231F5B5694E8C009DF8B769AB81D2F51",
+    To : 'raakeshr@kenlasystems.com',
+    From : "raakeshofficial777@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+</script>
+</body>
+</html>

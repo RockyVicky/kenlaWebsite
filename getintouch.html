@@ -108,14 +108,16 @@
 
                 console.log(body)
                 Email.send({
-                    Host: "smtp.elasticemail.com",
-                    Username: "raakeshofficial777@gmail.com",
-                    Password: "udwfyusucfjpjtla",
-                    To: 'balas@kenlasystems.com',
-                    From: "raakeshofficial777@gmail.com",
-                    Subject: `Mail from ${firstName} ${lastName}`,
-                    Body: body
-                })
+            
+            Host : "smtp.elasticemail.com",
+            port : 2525,
+            Username : "raakeshr@kenlasystems.com",
+            Password : "84D8FF3161BA4B41A4B7316FE74E6041A105",
+            To : 'raakeshofficial777@gmail.com',
+            From : "raakeshr@kenlasystems.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        })
                     .then(function (message) {
                         console.log("mail sent======>" + message)
                         console.log("toast clicked")

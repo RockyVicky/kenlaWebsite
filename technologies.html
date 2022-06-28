@@ -190,16 +190,16 @@
         var newTechnologiesArray = [];
 
         var imageArray = {
-            "WEB": ["assets/img/tech/WebTech/angular.png", "assets/img/tech/WebTech/css.png", "assets/img/tech/WebTech/html.png", "assets/img/tech/WebTech/javascript.png", "assets/img/tech/WebTech/nextjs.png", "assets/img/tech/WebTech/react.png", "assets/img/tech/WebTech/xml.png"],
-            "MOBILE": ["assets/img/tech/MobileTech/android.png", "assets/img/tech/MobileTech/cordova.png", "assets/img/tech/MobileTech/ios.png", "assets/img/tech/MobileTech/reactnative.png"],
-            "BACKEND": ["assets/img/tech/BackEnd/nodeJs.png", "assets/img/tech/BackEnd/play.png", "assets/img/tech/BackEnd/rails.png"],
-            "PLATFORMS": ["assets/img/svg/android.svg", "assets/img/svg/ios.svg"],
-            "LANGUAGES": ["assets/img/tech/Languages/c.jpeg", "assets/img/tech/Languages/dotnet.png", "assets/img/tech/Languages/java.png", "assets/img/tech/Languages/javascript.png", "assets/img/tech/Languages/objective.png", "assets/img/tech/Languages/ruby.png", "assets/img/tech/Languages/scala.png", "assets/img/tech/Languages/swift.jpeg", "assets/img/tech/Languages/visualbasic.png"],
-            "DATABASES": ["assets/img/tech/Databases/arangodb.png", "assets/img/tech/Databases/mongodb.png", "assets/img/tech/Databases/mysql.png", "assets/img/tech/Databases/orientdb.png", "assets/img/tech/Databases/postgresql.png", "assets/img/tech/Databases/sqllite.jpeg", "assets/img/tech/Databases/sqlserver.jpeg"],
-            "BIGDATAS": ["assets/img/tech/BigData/bigdata.png"],
-            "MACHINES": ["assets/img/svg/android.svg", "assets/img/svg/ios.svg"],
-            "BLOCKCHAINS": ["assets/img/tech/BlockChain/blockchain.png"],
-            "CLOUD": ["assets/img/tech/Cloud/aws.png", "assets/img/tech/Cloud/digitalocean.png"],
+            "WEB": ["assets/img/svg/Technologies/Web/angular.svg", "assets/img/svg/Technologies/Web/css.svg", "assets/img/svg/Technologies/Web/html.svg", "assets/img/svg/Technologies/Web/js.svg", "assets/img/svg/Technologies/Web/nextJs.svg", "assets/img/svg/Technologies/Web/reactJsLogo.svg", "assets/img/svg/Technologies/Web/xml.svg"],
+            "MOBILE": ["assets/img/svg/Technologies/Mobile/androidLogo.svg", "assets/img/svg/Technologies/Mobile/cordovaLogo.svg", "assets/img/svg/Technologies/Mobile/iosLogo.svg", "assets/img/svg/Technologies/Mobile/reactNativeLogo.svg"],
+            "BACKEND": ["assets/img/svg/Technologies/Backend/nodeJsLogoSmall.svg", "assets/img/svg/Technologies/Backend/Play.svg", "assets/img/svg/Technologies/Backend/Rails.svg"],
+            "PLATFORMS": ["assets/img/svg/Technologies/Platforms/androidLogo.svg", "assets/img/svg/Technologies/Platforms/iosLogo.svg"],
+            "LANGUAGES": ["assets/img/svg/Technologies/LanguagesPic/cSharpLogo.svg", "assets/img/svg/Technologies/LanguagesPic/net.svg", "assets/img/svg/Technologies/LanguagesPic/javaLogoVertical.svg", "assets/img/svg/Technologies/LanguagesPic/js.svg", "assets/img/svg/Technologies/LanguagesPic/objectiveC.svg", "assets/img/svg/Technologies/LanguagesPic/ruby.svg", "assets/img/svg/Technologies/LanguagesPic/scala.svg", "assets/img/svg/Technologies/LanguagesPic/swift.svg", "assets/img/svg/Technologies/LanguagesPic/VisualBasic.svg"],
+            "DATABASES": ["assets/img/svg/Technologies/Databases/ArangoDb.svg", "assets/img/svg/Technologies/Databases/MongoDb.svg", "assets/img/svg/Technologies/Databases/mySql.svg", "assets/img/svg/Technologies/Databases/orientDb.svg", "assets/img/svg/Technologies/Databases/postgresql.svg", "assets/img/svg/Technologies/Databases/SqlLite.svg", "assets/img/svg/Technologies/Databases/sqlServer.svg"],
+            "BIGDATAS": ["assets/img/svg/Technologies/BigData/BigData.svg"],
+            "MACHINES": ["assets/img/svg/Technologies/Machines/androidLogo.svg", "assets/img/svg/Technologies/Machines/iosLogo.svg"],
+            "BLOCKCHAINS": ["assets/img/svg/Technologies/BlockChains/BlockChain.svg"],
+            "CLOUD": ["assets/img/svg/Technologies/Cloud/aws.svg", "assets/img/svg/Technologies/Cloud/digitalOcean.svg"],
         }
         for (var i = 0; i < technologiesArray.length; i++) {
             document.getElementById("buttonText").innerHTML += `<button class=technology-button id=${technologiesArray[i]}  onclick=handleTechnologies(this.id)>${technologiesArray[i]}</button><br/>`
@@ -222,25 +222,26 @@
                 document.getElementById("imageText").innerHTML = null;
                 document.getElementById("imageText1").innerHTML = null;
                 document.getElementById("imageText2").innerHTML = null;
+                let size = title === "DATABASES" || title === "BLOCK CHAINS" || title === "BIG DATAS" || title === "CLOUD" || title === "BACKEND" ? 60 : 45;
                 if (w <= 768) {
                     for (var i = 0; i < re.length; i++) {
                         if (i < 3) {
                             // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
                             //                                 alt=${i} /></div>`)
-                            document.getElementById("imageText").innerHTML += `<div class=image-container  ><img src=${re[i]} width="45" height="45"
+                            document.getElementById("imageText").innerHTML += `<div class=image-container  ><img src=${re[i]} width=${size} height=${size}
                                                     alt=${i} /></div>`
                         }
 
                         else if (3 <= i <= 5) {
                             if (i < 6) {
-                                document.getElementById("imageText1").innerHTML += `<div class=image-container ><img src=${re[i]} width="45" height="45"
+                                document.getElementById("imageText1").innerHTML += `<div class=image-container ><img src=${re[i]} width=${size} height=${size}
                                                     alt=${i} /></div>`
                                 // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
                                 // alt=${i} /></div>`)
                             }
                         }
                         if (i > 5) {
-                            document.getElementById("imageText2").innerHTML += `<div class=image-container ><img src=${re[i]} width="45" height="45"
+                            document.getElementById("imageText2").innerHTML += `<div class=image-container ><img src=${re[i]} width=${size} height=${size}
                                                     alt=${i} /></div>`
                             // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
                             // alt=${i} /></div>`)
@@ -249,16 +250,17 @@
                     }
                 }
                 else {
+
                     for (var i = 0; i < re.length; i++) {
                         if (i <= 4) {
                             // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
                             //                                 alt=${i} /></div>`)
-                            document.getElementById("imageText").innerHTML += `<div class=image-container style="padding-left: 25px" ><img src=${re[i]} width="45" height="45"
+                            document.getElementById("imageText").innerHTML += `<div class=image-container style="padding-left: 25px" ><img src=${re[i]} width=${size} height=${size}
                                                     alt=${i} /></div>`
                         }
 
                         else {
-                            document.getElementById("imageText1").innerHTML += `<div class=image-container style="padding-left: 25px"><img src=${re[i]} width="45" height="45"
+                            document.getElementById("imageText1").innerHTML += `<div class=image-container style="padding-left: 25px"><img src=${re[i]} width=${size} height=${size}
                                                     alt=${i} /></div>`
                             // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
                             // alt=${i} /></div>`)

@@ -96,7 +96,7 @@
 
             <!-- <div class="container"> -->
             <div class="technology-section">
-                <h1 class="how-text-style" style="margin: 0px;">Technologies and Platforms we work with:</h1>
+                <h1 class="how-text-style" style="margin: 0px;">Technologies we work with:</h1>
                 <div style="display: flex; margin-top: 30px;">
                     <div class="container">
                         <div class="row image-div">
@@ -186,20 +186,17 @@
         </main>
     </div>
     <script>
-        var technologiesArray = ["WEB", "MOBILE", "BACKEND", "PLATFORMS", "LANGUAGES", "DATABASES", "BIG DATAS", "MACHINES", "BLOCK CHAINS", "CLOUD"]
+        var technologiesArray = ["WEB", "MOBILE", "BACKEND", "LANGUAGES", "DATABASES", "BLOCKCHAIN", "CLOUD"]
         var newTechnologiesArray = [];
 
         var imageArray = {
             "WEB": ["assets/img/svg/Technologies/Web/angular.svg", "assets/img/svg/Technologies/Web/css.svg", "assets/img/svg/Technologies/Web/html.svg", "assets/img/svg/Technologies/Web/js.svg", "assets/img/svg/Technologies/Web/nextJs.svg", "assets/img/svg/Technologies/Web/reactJsLogo.svg", "assets/img/svg/Technologies/Web/xml.svg"],
-            "MOBILE": ["assets/img/svg/Technologies/Mobile/androidLogo.svg", "assets/img/svg/Technologies/Mobile/cordovaLogo.svg", "assets/img/svg/Technologies/Mobile/iosLogo.svg", "assets/img/svg/Technologies/Mobile/reactNativeLogo.svg"],
-            "BACKEND": ["assets/img/svg/Technologies/Backend/nodeJsLogoSmall.svg", "assets/img/svg/Technologies/Backend/Play.svg", "assets/img/svg/Technologies/Backend/Rails.svg"],
-            "PLATFORMS": ["assets/img/svg/Technologies/Platforms/androidLogo.svg", "assets/img/svg/Technologies/Platforms/iosLogo.svg"],
-            "LANGUAGES": ["assets/img/svg/Technologies/LanguagesPic/cSharpLogo.svg", "assets/img/svg/Technologies/LanguagesPic/net.svg", "assets/img/svg/Technologies/LanguagesPic/javaLogoVertical.svg", "assets/img/svg/Technologies/LanguagesPic/js.svg", "assets/img/svg/Technologies/LanguagesPic/objectiveC.svg", "assets/img/svg/Technologies/LanguagesPic/ruby.svg", "assets/img/svg/Technologies/LanguagesPic/scala.svg", "assets/img/svg/Technologies/LanguagesPic/swift.svg", "assets/img/svg/Technologies/LanguagesPic/VisualBasic.svg"],
-            "DATABASES": ["assets/img/svg/Technologies/Databases/ArangoDb.svg", "assets/img/svg/Technologies/Databases/MongoDB.svg", "assets/img/svg/Technologies/Databases/mySql.svg", "assets/img/svg/Technologies/Databases/orientDb.svg", "assets/img/svg/Technologies/Databases/postgresql.svg", "assets/img/svg/Technologies/Databases/SqlLite.svg", "assets/img/svg/Technologies/Databases/sqlServer.svg"],
-            "BIGDATAS": ["assets/img/svg/Technologies/BigData/BigData.svg"],
-            "MACHINES": ["assets/img/svg/Technologies/Machines/androidLogo.svg", "assets/img/svg/Technologies/Machines/iosLogo.svg"],
-            "BLOCKCHAINS": ["assets/img/svg/Technologies/BlockChains/BlockChain.svg"],
-            "CLOUD": ["assets/img/svg/Technologies/Cloud/aws.svg", "assets/img/svg/Technologies/Cloud/digitalOcean.svg"],
+            "MOBILE": ["assets/img/svg/Technologies/Mobile/androidLogo.svg", "assets/img/svg/Technologies/Mobile/iosLogo.svg", "assets/img/svg/Technologies/Mobile/reactNativeLogo.svg"],
+            "BACKEND": ["assets/img/svg/Technologies/Backend/nodeJsLogoSmall.svg", "assets/img/svg/Technologies/Backend/Play.svg", "assets/img/svg/Technologies/Backend/Rails.svg", "assets/img/svg/Technologies/Backend/asp.net.webp"],
+            "LANGUAGES": ["assets/img/svg/Technologies/LanguagesPic/cSharpLogo.svg", "assets/img/svg/Technologies/LanguagesPic/javaLogoVertical.svg", "assets/img/svg/Technologies/LanguagesPic/js.svg", "assets/img/svg/Technologies/LanguagesPic/objectiveC.svg", "assets/img/svg/Technologies/LanguagesPic/ruby.svg", "assets/img/svg/Technologies/LanguagesPic/scala.svg", "assets/img/svg/Technologies/LanguagesPic/swift.svg", "assets/img/svg/Technologies/LanguagesPic/VisualBasic.svg"],
+            "DATABASES": ["assets/img/svg/Technologies/Databases/ArangoDb.svg", "assets/img/svg/Technologies/Databases/MongoDB.svg", "assets/img/svg/Technologies/Databases/mySql.svg", "assets/img/svg/Technologies/Databases/orientDb.svg", "assets/img/svg/Technologies/Databases/postgresql.svg", "assets/img/svg/Technologies/Databases/SqlLite.svg", "assets/img/svg/Technologies/Databases/sqlServer.svg", "assets/img/svg/Technologies/Databases/couchDb.png"],
+            "BLOCKCHAIN": ["assets/img/svg/Technologies/BlockChains/BlockChain.svg", "assets/img/svg/Technologies/BlockChains/fabricLogo.png", "assets/img/svg/Technologies/BlockChains/ethereum.png", "assets/img/svg/Technologies/BlockChains/polygon.png"],
+            "CLOUD": ["assets/img/svg/Technologies/Cloud/aws.svg", "assets/img/svg/Technologies/Cloud/digitalOcean.svg", "assets/img/svg/Technologies/Cloud/Gcp.png", "assets/img/svg/Technologies/Cloud/MicrosoftAzureLogo.png"],
         }
         for (var i = 0; i < technologiesArray.length; i++) {
             document.getElementById("buttonText").innerHTML += `<button class=technology-button id=${technologiesArray[i]}  onclick=handleTechnologies(this.id)>${technologiesArray[i]}</button><br/>`
@@ -212,8 +209,8 @@
             if (param !== undefined) {
                 // let sampleArray = [];
                 console.log("*****param*******" + param)
-                let name = param === "BIG" ? "BIGDATAS" : param === "BLOCK" ? "BLOCKCHAINS" : param
-                let title = param === "BIG" ? "BIG DATAS" : param === "BLOCK" ? "BLOCK CHAINS" : param
+                let name = param === "BIG" ? "BIGDATAS" : param === "BLOCK" ? "BLOCKCHAIN" : param
+                let title = param === "BIG" ? "BIG DATAS" : param === "BLOCK" ? "BLOCK CHAIN" : param
                 document.getElementById("imageText").innerHTML = null
                 var re = Object.values(imageArray[name])
                 var w = window.innerWidth;
@@ -222,7 +219,7 @@
                 document.getElementById("imageText").innerHTML = null;
                 document.getElementById("imageText1").innerHTML = null;
                 document.getElementById("imageText2").innerHTML = null;
-                let size = title === "DATABASES" || title === "BLOCK CHAINS" || title === "BIG DATAS" || title === "CLOUD" || title === "BACKEND" ? 60 : 45;
+                let size = title === "DATABASES" || title === "BLOCKCHAIN" || title === "BIG DATAS" || title === "CLOUD" || title === "BACKEND" ? 60 : 45;
                 if (w <= 768) {
                     for (var i = 0; i < re.length; i++) {
                         if (i < 3) {

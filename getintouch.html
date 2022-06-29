@@ -52,8 +52,11 @@
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
 
-    <script type="text/javascript">
-        function sendEmail() {
+    <script type="text/javascript">  
+
+
+     function sendEmail() {
+      
             var firstName = document.getElementById("fname").value
             var lastName = document.getElementById("lname").value
             var mail = document.getElementById("mail").value
@@ -109,10 +112,10 @@
                 console.log(body)
                 Email.send({
                     Host: "smtp.elasticemail.com",
-                    Username: "raakeshofficial777@gmail.com",
-                    Password: "udwfyusucfjpjtla",
-                    To: 'balas@kenlasystems.com',
-                    From: "raakeshofficial777@gmail.com",
+                    Username: "kenlawebsitedemo@gmail.com",
+                    Password: "0A17A1524F0D89FDA4723DA36AB6671C0EB3",
+                    To: 'raakeshr@kenlasystems.com',
+                    From: "kenlawebsitedemo@gmail.com",
                     Subject: `Mail from ${firstName} ${lastName}`,
                     Body: body
                 })

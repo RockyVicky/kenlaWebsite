@@ -370,6 +370,7 @@ a:hover {
 .contact-row-bottom {
     position:absolute;
     bottom: 100px;
+    margin-left: -22px;
 }
 .form-label {
     color: #000000;

@@ -156,6 +156,9 @@ a:hover {
     height: 65px;
     padding-right: 15px;
 }
+.nav-logo:hover{
+    transform: scale(1.1);
+}
 
 .nav-logo-text {
     font-size: 28px;
@@ -569,3 +572,7 @@ textarea {
         align-items: center;
     }
 }
+
+.fa:hover{
+    transform: scale(1.2);
+  }

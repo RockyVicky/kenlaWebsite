@@ -147,6 +147,9 @@
     height: 65px;
     padding-right: 15px;
 }
+.nav-logo:hover{
+    transform: scale(1.1);
+}
 
 .nav-logo-text {
     font-size: 28px;
@@ -182,6 +185,9 @@
     font-family: Poppins-Medium ;   
     letter-spacing: 0px;
     color: #938AA5;
+}
+.nav-link :hover{
+  transform: scale(1.2);
 }
 
 .nav-link-selected {
@@ -662,24 +668,6 @@
     position: relative;  
   }  
 
-  .innerbox::before {  
-   content: '';  
-   width: 45px;  
-   height: 45px;  
-   border: 10px solid #fff;  
-   border-radius: 50%;  
-   background: transparent;  
-   position: absolute;  
- }  
- /* top right circle of insta */  
- .innerbox::after {  
-   content: '';  
-   width: 10px;  
-   height: 10px;  
-   border: 2px solid #fff;  
-   border-radius: 50%;  
-   background: #fff;  
-   position: absolute;  
-   top: 8px;  
-   right: 10px;  
- }  
+  .fa:hover{
+    transform: scale(1.2);
+  }

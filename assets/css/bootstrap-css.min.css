@@ -1968,8 +1968,8 @@ textarea.form-control-lg{
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
-    -webkit-print-color-adjust:exact;
-    color-adjust:exact
+    /* -webkit-print-color-adjust:exact; */
+    /* color-adjust:exact */
 }
 .form-check-input[type=checkbox]{
     border-radius:.25em
@@ -9280,4 +9280,8 @@ textarea.form-control-lg{
         display:none!important
     }
 }
+
+/* .fa :hover{
+    transform: scale(1.2);
+  } */
 /*# sourceMappingURL=bootstrap.min.css.map */

@@ -146,6 +146,7 @@
     width: 65px;
     height: 65px;
     padding-right: 15px;
+    transition: 0.5s;
 }
 .nav-logo:hover{
     transform: scale(1.1);
@@ -429,6 +430,11 @@
     padding: 10px;
     margin: 20px 30px;
     border-radius: 25px;
+    transition: 1s;
+}
+.card-div:hover{
+    transform: scale(1.15);
+   
 }
 
 .serv-text-style {
@@ -538,6 +544,10 @@
     flex-direction: row;
     margin: 20px;
     font-family: Pop;
+    transition: 0.5s;
+}
+.image-container:hover{
+    transform: scale(1.8);
 }
 .image-container-title {
     font-family: BreeSerif-Regular;
@@ -669,5 +679,9 @@
   }  
 
   .fa:hover{
+    transition: 0.4s;
     transform: scale(1.2);
+  }
+  .test:hover{
+   transform: scale(1.3);
   }

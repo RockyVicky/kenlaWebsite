@@ -682,6 +682,39 @@
     transition: 0.4s;
     transform: scale(1.2);
   }
-  .test:hover{
-   transform: scale(1.3);
+  .tooltiptext {
+    visibility: hidden;
+    width: 60px;
+    background-color: transparent;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    /* padding: 5px 0; */
+    position: absolute;
+    /* z-index: 1; */
+    bottom: 100%;
+    /* left: 50%; */
+    /* margin-left: -60px; */
   }
+  .Test{
+    padding-bottom: 20px;
+    transition: 0.4s;
+  }
+  .Test:hover{
+    transform: scale(1.12);
+  }
+  
+  /* .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  } */
+  
+  /* .nav-logo:hover .tooltiptext  {
+    visibility: visible;
+  } */

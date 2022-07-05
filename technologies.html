@@ -206,7 +206,7 @@
         var newTechnologiesArray = [];
 
         var imageArray = {
-            "WEB": [{url:"assets/img/svg/Technologies/Web/angular.svg",title:"Angular"}, "assets/img/svg/Technologies/Web/css.svg", "assets/img/svg/Technologies/Web/html.svg", "assets/img/svg/Technologies/Web/js.svg", "assets/img/svg/Technologies/Web/nextJs.svg", "assets/img/svg/Technologies/Web/reactJsLogo.svg", "assets/img/svg/Technologies/Web/xml.svg"],
+            "WEB": ["assets/img/svg/Technologies/Web/angular.svg", "assets/img/svg/Technologies/Web/css.svg", "assets/img/svg/Technologies/Web/html.svg", "assets/img/svg/Technologies/Web/js.svg", "assets/img/svg/Technologies/Web/nextJs.svg", "assets/img/svg/Technologies/Web/reactJsLogo.svg", "assets/img/svg/Technologies/Web/xml.svg"],
             "MOBILE": ["assets/img/svg/Technologies/Mobile/androidLogo.svg", "assets/img/svg/Technologies/Mobile/iosLogo.svg", "assets/img/svg/Technologies/Mobile/reactNativeLogo.svg"],
             "BACKEND": ["assets/img/svg/Technologies/Backend/nodeJsLogoSmall.svg", "assets/img/svg/Technologies/Backend/Play.svg", "assets/img/svg/Technologies/Backend/Rails.svg", "assets/img/svg/Technologies/Backend/aspNet.svg", "assets/img/svg/Technologies/Backend/phoenix.png"],
             "LANGUAGES": ["assets/img/svg/Technologies/LanguagesPic/cSharpLogo.svg", "assets/img/svg/Technologies/LanguagesPic/javaLogoVertical.svg", "assets/img/svg/Technologies/LanguagesPic/js.svg", "assets/img/svg/Technologies/LanguagesPic/objectiveC.svg", "assets/img/svg/Technologies/LanguagesPic/ruby.svg", "assets/img/svg/Technologies/LanguagesPic/scala.svg", "assets/img/svg/Technologies/LanguagesPic/swift.svg", "assets/img/svg/Technologies/LanguagesPic/VisualBasic.svg", "assets/img/svg/Technologies/LanguagesPic/elixir.jpg"],
@@ -268,8 +268,8 @@
                         if (i <= 4) {
                             // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
                             //                                 alt=${i} /></div>`)
-                            document.getElementById("imageText").innerHTML += `<div class=image-container style="padding-left: 10px" ><img src=${re[i].url} width=${size} height=${size}
-                                                    alt=${i} title=${re[i].title} /></div>`
+                            document.getElementById("imageText").innerHTML += `<div class=image-container style="padding-left: 10px" ><img src=${re[i]} width=${size} height=${size}
+                                                    alt=${i} /></div>`
                         }
 
                         else {

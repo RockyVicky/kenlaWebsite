@@ -62,6 +62,7 @@
                 </div>
                 <nav>
                     <ul class="navbar">
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
                         <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
                         <li class="nav-item-selected"><a class="nav-link-selected">TECHNOLOGIES</a> </li>
                         <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
@@ -80,8 +81,9 @@
         <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalLongTitle" aria-hidden="true">
             <div class="modal-dialog" role="document" style="padding: 10px;">
-                <div class="modal-content" style="padding: 10px;">
+                <div class="modal-content" style="padding: 5px;">
                     <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
                         <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
                         <li class="nav-item"><a class="nav-link" href="technologies.html">TECHNOLOGIES</a></li>
                         <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
@@ -150,7 +152,7 @@
                             <div class="service-style">SERVICES:</div>
                             <div
                                 style="display: flex; flex-direction: row; justify-content: space-between;padding-top: 5px;">
-                                <p style=" margin: 0; font-family: Century-Gothic-Regular;">Web Development, Mobile Application, Blockchain,  AI and ML, Big Data Services, Cloud Infrastructure.</p>
+                                <p style=" margin: 0; font-family: Century-Gothic-Regular;">Web Development, Mobile Application, Blockchain, Automation AI & ML, Big Data Services, Cloud Infrastructure.</p>
 
                             </div>
                         </div>
@@ -159,8 +161,8 @@
                             <div>
                                 <p style=" margin: 0; font-family: Century-Gothic-Regular;
                             ">React, AngularJs, HTML5, PostgreSQL, MySQL, SQL Server,React Native, iOS, Android,
-                                    Hadroop, ,
-                                    Apache Spark, Oracle, NodeJs, ASP.Net, Play, Scala, Ruby on Rails, AWS,
+                                    Hadoop,
+                                    Apache Spark, NodeJs, ASP.Net, Play, Scala, Ruby on Rails, AWS,
                                     DigitalOcean, Azure,
                                     GCP, Ethereum, Hyperledger Fabric, Polygon, JavaScript,
                                     Swift, Java, Phoenix, Elixir, C&C++, Objective-C.</p>
@@ -206,13 +208,13 @@
         var newTechnologiesArray = [];
 
         var imageArray = {
-            "WEB": ["assets/img/svg/Technologies/Web/angular.svg", "assets/img/svg/Technologies/Web/css.svg", "assets/img/svg/Technologies/Web/html.svg", "assets/img/svg/Technologies/Web/js.svg", "assets/img/svg/Technologies/Web/nextJs.svg", "assets/img/svg/Technologies/Web/reactJsLogo.svg", "assets/img/svg/Technologies/Web/xml.svg"],
-            "MOBILE": ["assets/img/svg/Technologies/Mobile/androidLogo.svg", "assets/img/svg/Technologies/Mobile/iosLogo.svg", "assets/img/svg/Technologies/Mobile/reactNativeLogo.svg"],
-            "BACKEND": ["assets/img/svg/Technologies/Backend/nodeJsLogoSmall.svg", "assets/img/svg/Technologies/Backend/Play.svg", "assets/img/svg/Technologies/Backend/Rails.svg", "assets/img/svg/Technologies/Backend/aspNet.svg", "assets/img/svg/Technologies/Backend/phoenix.png"],
-            "LANGUAGES": ["assets/img/svg/Technologies/LanguagesPic/cSharpLogo.svg", "assets/img/svg/Technologies/LanguagesPic/javaLogoVertical.svg", "assets/img/svg/Technologies/LanguagesPic/js.svg", "assets/img/svg/Technologies/LanguagesPic/objectiveC.svg", "assets/img/svg/Technologies/LanguagesPic/ruby.svg", "assets/img/svg/Technologies/LanguagesPic/scala.svg", "assets/img/svg/Technologies/LanguagesPic/swift.svg", "assets/img/svg/Technologies/LanguagesPic/VisualBasic.svg", "assets/img/svg/Technologies/LanguagesPic/elixir.jpg"],
-            "DATABASES": ["assets/img/svg/Technologies/Databases/ArangoDb.svg", "assets/img/svg/Technologies/Databases/MongoDB.svg", "assets/img/svg/Technologies/Databases/mySql.svg", "assets/img/svg/Technologies/Databases/orientDb.svg", "assets/img/svg/Technologies/Databases/postgresql.svg", "assets/img/svg/Technologies/Databases/SqlLite.svg", "assets/img/svg/Technologies/Databases/sqlServer.svg", "assets/img/svg/Technologies/Databases/couchDb.svg"],
-            "BLOCKCHAIN": ["assets/img/svg/Technologies/BlockChains/BlockChain.svg", "assets/img/svg/Technologies/BlockChains/Hyperledger.svg", "assets/img/svg/Technologies/BlockChains/ethereum.svg", "assets/img/svg/Technologies/BlockChains/Polygon.svg"],
-            "CLOUD": ["assets/img/svg/Technologies/Cloud/aws.svg", "assets/img/svg/Technologies/Cloud/digitalOcean.svg", "assets/img/svg/Technologies/Cloud/Gcp.svg", "assets/img/svg/Technologies/Cloud/MS.svg"],
+            "WEB": [{url:"assets/img/svg/Technologies/Web/angular.svg", title:"Angular"},{url:"assets/img/svg/Technologies/Web/css.svg", title:"Css"}, {url:"assets/img/svg/Technologies/Web/html.svg", title:"HTML"}, {url:"assets/img/svg/Technologies/Web/js.svg", title:"JavaScript"}, {url:"assets/img/svg/Technologies/Web/nextJs.svg", title:"Next.Js"}, {url:"assets/img/svg/Technologies/Web/reactJsLogo.svg", title:"React.Js"}, {url:"assets/img/svg/Technologies/Web/xml.svg", title:"Xml"}],
+            "MOBILE": [{url:"assets/img/svg/Technologies/Mobile/androidLogo.svg", title:"Android"}, {url:"assets/img/svg/Technologies/Mobile/iosLogo.svg", title:"iOS"}, {url:"assets/img/svg/Technologies/Mobile/reactNativeLogo.svg", title:"ReactNative.js"}],
+            "BACKEND": [{url:"assets/img/svg/Technologies/Backend/nodeJsLogoSmall.svg", title:"NodeJs"}, {url:"assets/img/svg/Technologies/Backend/Play.svg", title:"Play"}, {url:"assets/img/svg/Technologies/Backend/Rails.svg", title:"Rails"}, {url:"assets/img/svg/Technologies/Backend/aspNet.svg", title:"asp.Net"}, {url:"assets/img/svg/Technologies/Backend/phoenix.png", title:"Phoenix"}],
+            "LANGUAGES": [{url:"assets/img/svg/Technologies/LanguagesPic/cSharpLogo.svg", title:"cSharp"}, {url:"assets/img/svg/Technologies/LanguagesPic/javaLogoVertical.svg", title:"Java"}, {url:"assets/img/svg/Technologies/LanguagesPic/js.svg", title:"JavaScript"}, {url:"assets/img/svg/Technologies/LanguagesPic/objectiveC.svg", title:"objectiveC"}, {url:"assets/img/svg/Technologies/LanguagesPic/ruby.svg", title:"Ruby"}, {url:"assets/img/svg/Technologies/LanguagesPic/scala.svg", title:"Scala"}, {url:"assets/img/svg/Technologies/LanguagesPic/swift.svg", title:"Swift"}, {url:"assets/img/svg/Technologies/LanguagesPic/VisualBasic.svg", title:"VisualBasic"}, {url:"assets/img/svg/Technologies/LanguagesPic/elixir.jpg", title:"Elixir"}],
+            "DATABASES": [{url:"assets/img/svg/Technologies/Databases/ArangoDb.svg", title:"ArangoDb"}, {url:"assets/img/svg/Technologies/Databases/MongoDB.svg", title:"MangoDb"}, {url:"assets/img/svg/Technologies/Databases/mySql.svg", title:"MySql"}, {url:"assets/img/svg/Technologies/Databases/orientDb.svg", title:"OrientDB"}, {url:"assets/img/svg/Technologies/Databases/postgresql.svg", title:"PostgresSql"}, {url:"assets/img/svg/Technologies/Databases/SqlLite.svg", title:"SqlLite"}, {url:"assets/img/svg/Technologies/Databases/sqlServer.svg", tilte:"SqlServer"}, {url:"assets/img/svg/Technologies/Databases/couchDb.svg", title:"CouchDB"}],
+            "BLOCKCHAIN": [{url:"assets/img/svg/Technologies/BlockChains/Hyperledger.svg", title:"HyperLedger"}, {url:"assets/img/svg/Technologies/BlockChains/ethereum.svg", title:"Ethereum"}, {url:"assets/img/svg/Technologies/BlockChains/Polygon.svg", title:"Polygon"}],
+            "CLOUD": [{url:"assets/img/svg/Technologies/Cloud/aws.svg", title:"AWS"}, {url:"assets/img/svg/Technologies/Cloud/digitalOcean.svg", title:"DigitalOcean"}, {url:"assets/img/svg/Technologies/Cloud/Gcp.svg", title:"GCP"}, {url:"assets/img/svg/Technologies/Cloud/MS.svg", title:"Azure"}],
         }
         for (var i = 0; i < technologiesArray.length; i++) {
             document.getElementById("buttonText").innerHTML += `<button class=technology-button id=${technologiesArray[i]}  onclick=handleTechnologies(this.id)>${technologiesArray[i]}</button><br/>`
@@ -236,6 +238,8 @@
                 document.getElementById("imageText1").innerHTML = null;
                 document.getElementById("imageText2").innerHTML = null;
                 let size = title === "DATABASES" || title === "BLOCKCHAIN" || title === "BIG DATAS" || title === "CLOUD" || title === "BACKEND" ? 60 : 45;
+                // let blockChainSize = 100;
+                
                 if (w <= 768) {
                     for (var i = 0; i < re.length; i++) {
                         if (i < 3) {
@@ -268,13 +272,13 @@
                         if (i <= 4) {
                             // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
                             //                                 alt=${i} /></div>`)
-                            document.getElementById("imageText").innerHTML += `<div class=image-container style="padding-left: 10px" ><img src=${re[i]} width=${size} height=${size}
-                                                    alt=${i} /></div>`
+                            document.getElementById("imageText").innerHTML += `<div class=image-container style="padding-left: 10px" ><img src=${re[i].url} width=${size} height=${size}
+                                                    alt=${i} title=${re[i].title} /></div>`
                         }
 
                         else {
-                            document.getElementById("imageText1").innerHTML += `<div class=image-container style="padding-left: 10px"><img src=${re[i]} width=${size} height=${size}
-                                                    alt=${i} /></div>`
+                            document.getElementById("imageText1").innerHTML += `<div class=image-container style="padding-left: 10px"><img src=${re[i].url} width=${size} height=${size}
+                                                    alt=${i} title=${re[i].title} /></div>`
                             // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
                             // alt=${i} /></div>`)
                         }

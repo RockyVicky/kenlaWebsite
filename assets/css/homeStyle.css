@@ -452,6 +452,65 @@
     clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
     transition: 0.9s;
 }
+@media (max-width:320px) {
+    .popup {
+        width: 155px;
+        height: 218px;
+    }
+}
+/* @media (min-width:350px){
+    .popup {
+        width: 200px;
+        height: 277px;
+    }
+} */
+ @media (min-width:375px) {
+    .popup {
+        width: 200px;
+        height: 277px;
+    }
+}
+@media (min-width:414px) {
+    .popup {
+        width: 239px;
+        height: 334px;
+    }
+}
+
+@media (min-width:425px) {
+    .popup {
+        width: 239px;
+        height: 334px;
+    }
+} 
+@media (min-width:768px) {
+    .popup {
+        width: 448px;
+        height: 630px;
+    }
+}
+@media (min-width:1024px) {
+    .popup {
+        width: 310px;
+        height: 417px;
+    }
+}
+@media (min-width:1440px) {
+    .popup {
+        width: 220px;
+        height: 310px;
+    }
+}
+@media (min-width:2560px) {
+    .popup {
+        width: 238px;
+        height: 334px;
+    }
+}  
+
+
+
+
 .infoMain{
     display: flex;
     justify-content: center;
@@ -764,6 +823,7 @@ button:focus ~.popup{
     font-weight: bold;
     font-size: medium;
     text-transform: uppercase;
+    padding: 10px 0px;
     
   }
   

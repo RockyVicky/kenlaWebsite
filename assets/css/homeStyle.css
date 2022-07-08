@@ -173,7 +173,7 @@
 }
 
 .nav-item-selected {
-    padding: 0px 10px;
+    padding: 0px 15px;
     height: 92px;
     border-bottom: 5px solid #F56961;
     border-radius: 5px;
@@ -186,6 +186,8 @@
     font-family: Poppins-Medium ;   
     letter-spacing: 0px;
     color: #938AA5;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .nav-link :hover{
   transform: scale(1.2);
@@ -431,6 +433,38 @@
     margin: 20px 30px;
     border-radius: 25px;
     transition: 1s;
+    cursor: pointer;
+
+}
+.popup{
+    /* margin-left: -5px; */
+    position: absolute;
+    width: 220px;
+    height: 310px;
+    background-color: #BEC2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 10px;
+    z-index: 10;
+    clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+    transition: 0.9s;
+}
+.infoMain{
+    display: flex;
+    justify-content: center;
+
+}
+.info{
+    z-index: 2;
+    position:absolute;
+    border: none;
+    background-color: transparent ;
+}
+button:focus ~.popup{
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
 }
 .card-div:hover{
     transform: scale(1.15);
@@ -703,6 +737,36 @@
   .Test:hover{
     transform: scale(1.12);
   }
+  .service-scroll{
+    overflow-y: scroll;
+    color: black;
+    text-align: justify;
+    font-size: 12px;
+    font-weight: 5px;
+    padding: 0px 6px;
+    
+
+  }
+  .service-scroll::-webkit-scrollbar{
+    width: 5px;  
+}
+/* Track */
+.service-scroll::-webkit-scrollbar-track {
+    background: #BEC2F2; 
+  }
+   
+  /* Handle */
+  .service-scroll::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  .card-title{
+    color: #0A2A59;
+    font-weight: bold;
+    font-size: medium;
+    text-transform: uppercase;
+    
+  }
+  
   
   /* .tooltiptext::after {
     content: "";

@@ -439,8 +439,8 @@
 .popup{
     /* margin-left: -5px; */
     position: absolute;
-    width: 220px;
-    height: 310px;
+    width: 95%;
+    height: 95%;
     background-color: #BEC2F2;
     display: flex;
     justify-content: center;
@@ -451,19 +451,15 @@
     z-index: 10;
     clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
     transition: 0.9s;
+    
 }
-@media (max-width:320px) {
+/* @media (max-width:320px) {
     .popup {
         width: 155px;
         height: 218px;
     }
 }
-/* @media (min-width:350px){
-    .popup {
-        width: 200px;
-        height: 277px;
-    }
-} */
+
  @media (min-width:375px) {
     .popup {
         width: 200px;
@@ -496,7 +492,7 @@
     }
 }
 
-@media (min-width:1300px) and (max-width:1550px) {
+@media (max-width: 1540px ) and (min-width:  1300px) {
     .popup {
         width: 220px;
         height: 310px;
@@ -507,9 +503,7 @@
         width: 238px;
         height: 334px;
     }
-}  
-
-
+}   */
 
 
 .infoMain{
@@ -678,7 +672,16 @@ button:focus ~.popup{
     
 }
 .example::-webkit-scrollbar {
-    display: none;
+    width: 10px;
+}
+
+.example::-webkit-scrollbar-track {
+  background:#E5E8FB; 
+}
+ 
+
+.example::-webkit-scrollbar-thumb {
+  background: #96a5f7; 
 }
 .header-logo-image{
     height: auto;
@@ -729,6 +732,7 @@ button:focus ~.popup{
 @media (min-width:800px) {
     .testStyleNew {
         height: 340px;
+        width: 700px;
         border-radius: 10px; 
         background-color: #D9DEFE; 
         margin-bottom: 20px; 
@@ -736,6 +740,7 @@ button:focus ~.popup{
         flex-direction: row; 
         justify-content: center; 
         align-items: center;
+        margin-left:0;
     }
 }
 .bottom-dot-style{
@@ -794,6 +799,17 @@ button:focus ~.popup{
     padding-bottom: 20px;
     transition: 0.4s;
   }
+  .test::-webkit-scrollbar {
+    width: 10px;
+}
+.test::-webkit-scrollbar-track {
+    background:#E5E8FB; 
+  }
+   
+  
+  .test::-webkit-scrollbar-thumb {
+    background: #96a5f7; 
+  }
   .Test:hover{
     transform: scale(1.12);
   }
@@ -825,6 +841,7 @@ button:focus ~.popup{
     font-size: medium;
     text-transform: uppercase;
     padding: 10px 0px;
+    text-align: center;
     
   }
   

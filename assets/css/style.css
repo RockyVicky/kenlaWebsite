@@ -554,7 +554,7 @@ textarea {
   *, *::before, *::after {
     box-sizing: border-box;
   }
-  .testStyleNew{
+  .test-style-new{
     height: 450px; 
     border-radius: 10px; 
     background-color: #D9DEFE; 
@@ -565,7 +565,7 @@ textarea {
     align-items: center; 
 }
 @media (max-width:780px) {
-    .testStyleNew {
+    .test-style-new {
         height: 662px;
         border-radius: 10px; 
         background-color: #D9DEFE; 

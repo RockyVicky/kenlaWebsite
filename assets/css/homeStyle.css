@@ -506,11 +506,11 @@
 }   */
 
 
-.infoMain{
+/* .infoMain{
     display: flex;
     justify-content: center;
 
-}
+} */
 .info{
     z-index: 2;
     position:absolute;
@@ -705,7 +705,7 @@ button:focus ~.popup{
     align-items: center;
 }
 
-.testStyleNew{
+.test-style-new{
     height: 450px; 
     border-radius: 10px; 
     background-color: #D9DEFE; 
@@ -718,7 +718,7 @@ button:focus ~.popup{
    
 }
 @media (max-width:780px) {
-    .testStyleNew {
+    .test-style-new {
         height: 662px;
         border-radius: 10px; 
         background-color: #D9DEFE; 
@@ -730,7 +730,7 @@ button:focus ~.popup{
     }
 }
 @media (min-width:800px) {
-    .testStyleNew {
+    .test-style-new {
         height: 340px;
         width: 700px;
         border-radius: 10px; 

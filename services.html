@@ -46,118 +46,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="assets/css/homeStyle.css" rel="stylesheet">
-<style>
-    #check-pop1{
-        /* margin-left: -5px; */
-        /* display:none; */
-        position: absolute;
-        width: 95%;
-        height: 95%;
-        background-color: #BEC2F2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        border-radius: 10px;
-        z-index: 10;
-        clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
-        transition: 0.9s;
-        
-    }
-    #check-pop2{
-        /* margin-left: -5px; */
-        /* display:none; */
-        position: absolute;
-        width: 95%;
-        height: 95%;
-        background-color: #BEC2F2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        border-radius: 10px;
-        z-index: 10;
-        clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
-        transition: 0.9s;
-        
-    }
-    #check-pop3{
-        /* margin-left: -5px; */
-        /* display:none; */
-        position: absolute;
-        width: 95%;
-        height: 95%;
-        background-color: #BEC2F2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        border-radius: 10px;
-        z-index: 10;
-        clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
-        transition: 0.9s;
-        
-    }
-    #check-pop4{
-        /* margin-left: -5px; */
-        /* display:none; */
-        position: absolute;
-        width: 95%;
-        height: 95%;
-        background-color: #BEC2F2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        border-radius: 10px;
-        z-index: 10;
-        clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
-        transition: 0.9s;
-        
-    }
-    #check-pop5{
-        /* margin-left: -5px; */
-        /* display:none; */
-        position: absolute;
-        width: 95%;
-        height: 95%;
-        background-color: #BEC2F2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        border-radius: 10px;
-        z-index: 10;
-        clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
-        transition: 0.9s;
-        
-    }
-    #check-pop6{
-        /* margin-left: -5px; */
-        /* display:none; */
-        position: absolute;
-        width: 95%;
-        height: 95%;
-        background-color: #BEC2F2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        border-radius: 10px;
-        z-index: 10;
-        clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
-        transition: 0.9s;
-        
-    }
-   
-</style>
-
+  
 </head>
 
 <body>
@@ -456,14 +345,19 @@
         </main>
     </div>
     <script>
-        function myFunction(x, y) {
-            
+        function myFunction(x, y) {  
            if(x === 'O'){ 
-            document.getElementById(`check-pop${y}`).style.clipPath = "polygon(0 0,100% 0, 100% 100%, 0 100%)";
-           } else {
-            document.getElementById(`check-pop${y}`).style.clipPath = "polygon(0 50%, 100% 50%, 100% 50%, 0 50%)";
-            }
-    }
+             document.getElementById(`check-pop${y}`).style.clipPath = "polygon(0 0,100% 0, 100% 100%, 0 100%)";
+           } else if(x === 'C') {
+              document.getElementById(`check-pop${y}`).style.clipPath = "polygon(0 50%, 100% 50%, 100% 50%, 0 50%)";
+           }else if(x === 'I'){
+             document.getElementById(`check-pop${y}`).setAttribute("style", "position: absolute;width: 95%;height: 95%;background-color: #BEC2F2; display: flex;justify-content: center; align-items: center;flex-direction: column;color: white;border-radius: 10px;z-index: 10;clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);transition: 0.9s");  
+           }
+         }
+         for(let i=1;i<=6;i++){
+            myFunction("I",i)
+         }
+        
     </script>
 </body>
 

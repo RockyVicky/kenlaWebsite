@@ -186,8 +186,8 @@
     font-family: Poppins-Medium ;   
     letter-spacing: 0px;
     color: #938AA5;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .nav-link :hover{
   transform: scale(1.2);

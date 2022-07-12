@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="assets/css/homeStyle.css" rel="stylesheet">
 <style>
-    #check-pop{
+    #check-pop1{
         /* margin-left: -5px; */
         /* display:none; */
         position: absolute;
@@ -65,6 +65,97 @@
         transition: 0.9s;
         
     }
+    #check-pop2{
+        /* margin-left: -5px; */
+        /* display:none; */
+        position: absolute;
+        width: 95%;
+        height: 95%;
+        background-color: #BEC2F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        border-radius: 10px;
+        z-index: 10;
+        clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+        transition: 0.9s;
+        
+    }
+    #check-pop3{
+        /* margin-left: -5px; */
+        /* display:none; */
+        position: absolute;
+        width: 95%;
+        height: 95%;
+        background-color: #BEC2F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        border-radius: 10px;
+        z-index: 10;
+        clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+        transition: 0.9s;
+        
+    }
+    #check-pop4{
+        /* margin-left: -5px; */
+        /* display:none; */
+        position: absolute;
+        width: 95%;
+        height: 95%;
+        background-color: #BEC2F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        border-radius: 10px;
+        z-index: 10;
+        clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+        transition: 0.9s;
+        
+    }
+    #check-pop5{
+        /* margin-left: -5px; */
+        /* display:none; */
+        position: absolute;
+        width: 95%;
+        height: 95%;
+        background-color: #BEC2F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        border-radius: 10px;
+        z-index: 10;
+        clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+        transition: 0.9s;
+        
+    }
+    #check-pop6{
+        /* margin-left: -5px; */
+        /* display:none; */
+        position: absolute;
+        width: 95%;
+        height: 95%;
+        background-color: #BEC2F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        border-radius: 10px;
+        z-index: 10;
+        clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+        transition: 0.9s;
+        
+    }
+   
 </style>
 
 </head>
@@ -125,7 +216,7 @@
                         <div style="padding: 0px 10%">
                             <div class="col-md-6 col-lg-3 col-sm-12 card-div">
 
-                                <button onclick="myFunction()" class="info">
+                                <button onclick="myFunction('O','1')" class="info">
                                     <img src="assets/img/svg/info.svg" />
                                 </button>
                                 
@@ -144,9 +235,9 @@
 
                                 
                                 
-                                <div id="myDIV">
+                                
 
-                                    <div id="check-pop"  onclick="closePop()">
+                                    <div id="check-pop1"  onclick="myFunction('C','1')">
                                         <p class="card-title">Web Development</p>
                                              <label class="service-scroll" for="btn">Lorem ipsum dolor sit amet, consectetur
                                              adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
@@ -165,36 +256,41 @@
                                             at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida
                                             libero rhoncus ut.</label>
                                         </div> -->
-                                </div>
+                               
 
 
                                 <img alt="we-dev" width="100%" height="100%" src="assets/img/svg/webDev.svg" />
 
                             </div>
                             <div class="col-md-6 col-lg-3 col-sm-12 card-div">
-                                <button class="info">
-                                    <img src="assets/img/svg/info.svg" />
-                                </button>
-                                <div class="popup">
-                                    <p class="card-title">Mobile Application</p>
-                                    <label class="service-scroll" for="btn">Independent Verification and ValidationIV&V
-                                        is web and mobile based application to track IV&V team's findings and
-                                        observations and recommendations. Tool allows IV&V team to collaborate between
-                                        resources to develop findings and Client teams to search and find them.
-                                        Dashboards allow executives to keeIndependent Verification and ValidationIV&V is
-                                        web and mobile based application to track IV&V team's findings and observations
-                                        and recommendations. Tool allows IV&V team to collaborate between resources to
-                                        develop findings and Client teams to search and find them. Dashboards allow
-                                        executives to kee</label>
-                                </div>
+                                    <button class="info" onclick="myFunction('O','2')">
+                                        <img src="assets/img/svg/info.svg" />
+                                    </button>
+                                
+
+                                    <div id="check-pop2"  onclick="myFunction('C','2')">
+                                        <p class="card-title">Mobile Application</p>
+                                        <label class="service-scroll" for="btn">Independent Verification and ValidationIV&V
+                                            is web and mobile based application to track IV&V team's findings and
+                                            observations and recommendations. Tool allows IV&V team to collaborate between
+                                            resources to develop findings and Client teams to search and find them.
+                                            Dashboards allow executives to keeIndependent Verification and ValidationIV&V is
+                                            web and mobile based application to track IV&V team's findings and observations
+                                            and recommendations. Tool allows IV&V team to collaborate between resources to
+                                            develop findings and Client teams to search and find them. Dashboards allow
+                                            executives to kee</label>
+                                    </div>
+                                        
+                                
+                                
                                 <img alt="we-dev" width="100%" height="100%" src="assets/img/svg/mobileApp.svg" />
 
                             </div>
                             <div class="col-md-6 col-lg-3 col-sm-12 card-div">
-                                <button class="info">
+                                <button class="info" onclick="myFunction('O','3')">
                                     <img src="assets/img/svg/info.svg" />
                                 </button>
-                                <div class="popup">
+                                <div class="popup" onclick="myFunction('C','3')">
                                     <p class="card-title">BlockChain</p>
                                     <label class="service-scroll" for="btn">Independent Verification and ValidationIV&V
                                         is web and mobile based application to track IV&V team's findings and
@@ -210,10 +306,10 @@
 
                             </div>
                             <div class="col-md-6 col-lg-3 col-sm-12 card-div">
-                                <button class="info">
+                                <button class="info" onclick="myFunction('O','4')">
                                     <img src="assets/img/svg/info.svg" />
                                 </button>
-                                <div class="popup">
+                                <div class="popup" onclick="myFunction('C','4')">
                                     <p class="card-title">AI @ ML</p>
                                     <label class="service-scroll" for="btn">Independent Verification and ValidationIV&V
                                         is web and mobile based application to track IV&V team's findings and
@@ -229,10 +325,10 @@
 
                             </div>
                             <div class="col-md-6 col-lg-3 col-sm-12 card-div">
-                                <button class="info">
+                                <button class="info" onclick="myFunction('O','5')">
                                     <img src="assets/img/svg/info.svg" />
                                 </button>
-                                <div class="popup">
+                                <div class="popup" onclick="myFunction('C','5')">
                                     <p class="card-title">Big Data</p>
                                     <label class="service-scroll" for="btn">Independent Verification and ValidationIV&V
                                         is web and mobile based application to track IV&V team's findings and
@@ -248,10 +344,10 @@
 
                             </div>
                             <div class="col-md-6 col-lg-3 col-sm-12 card-div">
-                                <button class="info">
+                                <button class="info" onclick="myFunction('O','6')">
                                     <img src="assets/img/svg/info.svg" />
                                 </button>
-                                <div class="popup">
+                                <div class="popup" onclick="myFunction('C','6')">
                                     <p class="card-title">Cloud Infrastructure</p>
                                     <label class="service-scroll" for="btn">Independent Verification and ValidationIV&V
                                         is web and mobile based application to track IV&V team's findings and
@@ -360,16 +456,14 @@
         </main>
     </div>
     <script>
-        function myFunction() {
-            var y = document.getElementById("check-pop");
-            y.style.clipPath = "polygon(0 0,100% 0, 100% 100%, 0 100%)";
-
-        }
-        function closePop() {
-            var x = document.getElementById("check-pop");
-                    
-                    x.style.clipPath = "polygon(0 50%, 100% 50%, 100% 50%, 0 50%)";
-        }
+        function myFunction(x, y) {
+            
+           if(x === 'O'){ 
+            document.getElementById(`check-pop${y}`).style.clipPath = "polygon(0 0,100% 0, 100% 100%, 0 100%)";
+           } else {
+            document.getElementById(`check-pop${y}`).style.clipPath = "polygon(0 50%, 100% 50%, 100% 50%, 0 50%)";
+            }
+    }
     </script>
 </body>
 

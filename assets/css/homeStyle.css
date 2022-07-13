@@ -815,7 +815,7 @@ button:focus ~.popup{
   }
   .service-scroll{
     overflow-y: scroll;
-    color: black;
+    color: white;
     /*text-align: justify;
     font-size: 12px;
     font-weight: 5px;

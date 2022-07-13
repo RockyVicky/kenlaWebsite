@@ -522,6 +522,7 @@ button:focus ~.popup{
 }
 .card-div:hover{
     transform: scale(1.15);
+    font-size: 12px;
    
 }
 
@@ -850,8 +851,9 @@ button:focus ~.popup{
     overflow-y: scroll;
     color: #0A2A59;
     font-family: Poppins-Medium;
-    /*text-align: justify;
     font-size: 12px;
+    /*text-align: justify;
+    
     font-weight: 5px;
     padding: 0px 6px; */
     

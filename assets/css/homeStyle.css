@@ -533,11 +533,12 @@ button:focus ~.popup{
     color: #03336E;
 }
 .dot-e-style {
-    width: 200px;
+    width: 150px;
     height: 200px;
     padding: 25px;
     margin-bottom: -100px;
-    margin-right: -100px;    
+    margin-right: -100px; 
+     
 }
 .dot-e-topStyle {
     width: 200px;
@@ -666,9 +667,11 @@ button:focus ~.popup{
     position: relative;
 }
 .example{
-    padding: 0px 20%;
+    padding: 0px 10%;
     overflow-y: auto; 
+    overflow-x: hidden;
     height: 400px;
+
     
 }
 .example::-webkit-scrollbar {
@@ -706,7 +709,8 @@ button:focus ~.popup{
 }
 
 .test-style-new{
-    height: 450px; 
+    height: 450px;
+     
     border-radius: 10px; 
     background-color: #D9DEFE; 
     margin-bottom: 20px; 
@@ -732,6 +736,34 @@ button:focus ~.popup{
 @media (min-width:800px) {
     .test-style-new {
         height: 340px;
+        width: 540px;
+        border-radius: 10px; 
+        background-color: #D9DEFE; 
+        margin-bottom: 20px; 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center;
+        /* margin-left:0; */
+    }
+}
+@media (min-width:1200px) {
+    .test-style-new {
+        height: 340px;
+        width: 600px;
+        border-radius: 10px; 
+        background-color: #D9DEFE; 
+        margin-bottom: 20px; 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center;
+        /* margin-left:0; */
+    }
+}
+@media (min-width:1400px) {
+    .test-style-new {
+        height: 340px;
         width: 700px;
         border-radius: 10px; 
         background-color: #D9DEFE; 
@@ -740,9 +772,10 @@ button:focus ~.popup{
         flex-direction: row; 
         justify-content: center; 
         align-items: center;
-        margin-left:0;
+        /* margin-left:0; */
     }
 }
+
 .bottom-dot-style{
     width: 200px;
     height: 200px;

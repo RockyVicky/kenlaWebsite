@@ -12,7 +12,8 @@
 
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="keywords" content="kenla, kenlas, kenla system, KenlaSystems, kenla system limited, kenla pvt ltd, kenlaSystems, sabari">
+    <meta name="keywords"
+        content="kenla, kenlas, kenla system, KenlaSystems, kenla system limited, kenla pvt ltd, kenlaSystems, sabari">
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -47,6 +48,7 @@
     <link href="assets/css/homeStyle.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/data/data.json"></script>
 
 </head>
 
@@ -56,7 +58,8 @@
             <header id="masthead" class="site-header">
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center;">
                     <a class="nav-link row-div" href="index.html">
-                        <img class="nav-logo" alt="logo" src="assets/img/svg/NEW LOGO.svg" class="header-logo-image"  title="HOME"/>
+                        <img class="nav-logo" alt="logo" src="assets/img/svg/NEW LOGO.svg" class="header-logo-image"
+                            title="HOME" />
                     </a>
                     <p class="nav-logo-text">Kenla Systems</p>
                 </div>
@@ -138,7 +141,7 @@
                         style="display: flex; justify-content: center; align-items: flex-start; font-size: 12px; ">
                         <div class="col-md-3 col-lg-3 col-sm-12"
                             style="color: #fff;  display: flex; flex-direction: row; ">
-                            
+
                             <img class="nav-logo" alt="logo" src="assets/img/svg/NEW LOGO.svg" />
                             <div>
                                 <p
@@ -152,7 +155,9 @@
                             <div class="service-style">SERVICES:</div>
                             <div
                                 style="display: flex; flex-direction: row; justify-content: space-between;padding-top: 5px;">
-                                <p style=" margin: 0; font-family: Century-Gothic-Regular;">Web Development, Mobile Application, Blockchain, Automation AI & ML, Big Data Services, Cloud Infrastructure.</p>
+                                <p style=" margin: 0; font-family: Century-Gothic-Regular;">Web Development, Mobile
+                                    Application, Blockchain, Automation AI & ML, Big Data Services, Cloud
+                                    Infrastructure.</p>
 
                             </div>
                         </div>
@@ -160,8 +165,10 @@
                             <p class="tech-style">TECHNOLOGIES: </p>
                             <div>
                                 <p style=" margin: 0; font-family: Century-Gothic-Regular;
-                            ">HTML5, JavaScript, React, React Native, AngularJs, NodeJs, PostgreSQL, MySQL, SQL Server, AWS, DigitalOcean, Hyperledger Fabric, Ethereum, Polygon, 
-                            CouchDB, iOS, Objective-C, Swift, Android, Java, Hadoop, Apache Spark, Phoenix, Elixir, Play, Scala, Ruby on Rails, C&C++, ASP.Net, Azure, GCP.
+                            ">HTML5, JavaScript, React, React Native, AngularJs, NodeJs, PostgreSQL, MySQL, SQL Server,
+                                    AWS, DigitalOcean, Hyperledger Fabric, Ethereum, Polygon,
+                                    CouchDB, iOS, Objective-C, Swift, Android, Java, Hadoop, Apache Spark, Phoenix,
+                                    Elixir, Play, Scala, Ruby on Rails, C&C++, ASP.Net, Azure, GCP.
                                 </p>
                             </div>
                         </div>
@@ -180,10 +187,11 @@
                                 width: 30px;
                                 border-radius: 50%;
                                 height: 30px;
-                                text-decoration: none;" target="_blank" href="https://www.facebook.com/KenlaSystems/" class="fa fa-facebook"></a>
+                                text-decoration: none;" target="_blank" href="https://www.facebook.com/KenlaSystems/"
+                                    class="fa fa-facebook"></a>
                                 <!-- <a style="color: white;  padding: 0px 5px 0px 35px; font-size: 20px; text-decoration: none; " href="https://www.instagram.com/kenlasystems/" class="fa fa-instagram"></a> -->
-                                
-                                    <div style="padding-left: 20px ;">
+
+                                <div style="padding-left: 20px ;">
                                     <a style="color: white;  
                                     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%); 
                                     width: 30px;
@@ -191,8 +199,9 @@
                                     height: 30px;
                                     text-align: center;
                                     padding-top: 5px;
-                                    font-size: 20px; text-decoration: none;" target="_blank" href="https://www.instagram.com/kenlasystems/" class="fa fa-instagram"></a>
-                                    </div>
+                                    font-size: 20px; text-decoration: none;" target="_blank"
+                                        href="https://www.instagram.com/kenlasystems/" class="fa fa-instagram"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -201,18 +210,8 @@
         </main>
     </div>
     <script>
-        var technologiesArray = ["WEB", "MOBILE", "BACKEND", "LANGUAGES", "DATABASES", "BLOCKCHAIN", "CLOUD"]
-        var newTechnologiesArray = [];
-
-        var imageArray = {
-            "WEB": [{url:"assets/img/svg/Technologies/Web/angular.svg", title:"Angular"},{url:"assets/img/svg/Technologies/Web/css.svg", title:"Css"}, {url:"assets/img/svg/Technologies/Web/html.svg", title:"HTML"}, {url:"assets/img/svg/Technologies/Web/js.svg", title:"JavaScript"}, {url:"assets/img/svg/Technologies/Web/nextJs.svg", title:"Next.Js"}, {url:"assets/img/svg/Technologies/Web/reactJsLogo.svg", title:"React.Js"}, {url:"assets/img/svg/Technologies/Web/xml.svg", title:"Xml"}],
-            "MOBILE": [{url:"assets/img/svg/Technologies/Mobile/androidLogo.svg", title:"Android"}, {url:"assets/img/svg/Technologies/Mobile/iosLogo.svg", title:"iOS"}, {url:"assets/img/svg/Technologies/Mobile/reactNativeLogo.svg", title:"ReactNative.js"}],
-            "BACKEND": [{url:"assets/img/svg/Technologies/Backend/nodeJsLogoSmall.svg", title:"NodeJs"}, {url:"assets/img/svg/Technologies/Backend/Play.svg", title:"Play"}, {url:"assets/img/svg/Technologies/Backend/Rails.svg", title:"Rails"}, {url:"assets/img/svg/Technologies/Backend/aspNet.svg", title:"asp.Net"}, {url:"assets/img/svg/Technologies/Backend/phoenix.png", title:"Phoenix"}],
-            "LANGUAGES": [{url:"assets/img/svg/Technologies/LanguagesPic/cSharpLogo.svg", title:"cSharp"}, {url:"assets/img/svg/Technologies/LanguagesPic/javaLogoVertical.svg", title:"Java"}, {url:"assets/img/svg/Technologies/LanguagesPic/js.svg", title:"JavaScript"}, {url:"assets/img/svg/Technologies/LanguagesPic/objectiveC.svg", title:"objectiveC"}, {url:"assets/img/svg/Technologies/LanguagesPic/ruby.svg", title:"Ruby"}, {url:"assets/img/svg/Technologies/LanguagesPic/scala.svg", title:"Scala"}, {url:"assets/img/svg/Technologies/LanguagesPic/swift.svg", title:"Swift"}, {url:"assets/img/svg/Technologies/LanguagesPic/VisualBasic.svg", title:"VisualBasic"}, {url:"assets/img/svg/Technologies/LanguagesPic/elixir.jpg", title:"Elixir"}],
-            "DATABASES": [{url:"assets/img/svg/Technologies/Databases/ArangoDb.svg", title:"ArangoDb"}, {url:"assets/img/svg/Technologies/Databases/MongoDB.svg", title:"MangoDb"}, {url:"assets/img/svg/Technologies/Databases/mySql.svg", title:"MySql"}, {url:"assets/img/svg/Technologies/Databases/orientDb.svg", title:"OrientDB"}, {url:"assets/img/svg/Technologies/Databases/postgresql.svg", title:"PostgresSql"}, {url:"assets/img/svg/Technologies/Databases/SqlLite.svg", title:"SqlLite"}, {url:"assets/img/svg/Technologies/Databases/sqlServer.svg", tilte:"SqlServer"}, {url:"assets/img/svg/Technologies/Databases/couchDb.svg", title:"CouchDB"}],
-            "BLOCKCHAIN": [{url:"assets/img/svg/Technologies/BlockChains/Hyperledger.svg", title:"HyperLedger"}, {url:"assets/img/svg/Technologies/BlockChains/ethereum.svg", title:"Ethereum"}, {url:"assets/img/svg/Technologies/BlockChains/Polygon.svg", title:"Polygon"}],
-            "CLOUD": [{url:"assets/img/svg/Technologies/Cloud/aws.svg", title:"AWS"}, {url:"assets/img/svg/Technologies/Cloud/digitalOcean.svg", title:"DigitalOcean"}, {url:"assets/img/svg/Technologies/Cloud/Gcp.svg", title:"GCP"}, {url:"assets/img/svg/Technologies/Cloud/MS.svg", title:"Azure"}],
-        }
+        var technologiesArray = data.technologiesPage.technologiesArray
+        var imageArray = data.technologiesPage.imageArray
         for (var i = 0; i < technologiesArray.length; i++) {
             document.getElementById("buttonText").innerHTML += `<button class=technology-button id=${technologiesArray[i]}  onclick=handleTechnologies(this.id)>${technologiesArray[i]}</button><br/>`
         }
@@ -235,53 +234,40 @@
                 document.getElementById("imageText1").innerHTML = null;
                 document.getElementById("imageText2").innerHTML = null;
                 let size = title === "DATABASES" || title === "BLOCKCHAIN" || title === "BIG DATAS" || title === "CLOUD" || title === "BACKEND" ? 60 : 45;
-                // let blockChainSize = 100;
-                
                 if (w <= 768) {
                     for (var i = 0; i < re.length; i++) {
                         if (i < 3) {
-                            // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
-                            //                                 alt=${i} /></div>`)
                             document.getElementById("imageText").innerHTML += `<div class=image-container  ><img src=${re[i].url} width=${size} height=${size}
                                                     alt=${i} title=${re[i].title} /></div>`
                         }
-
                         else if (3 <= i <= 5) {
                             if (i < 6) {
                                 document.getElementById("imageText1").innerHTML += `<div class=image-container ><img src=${re[i].url} width=${size} height=${size}
                                                     alt=${i} title=${re[i].title} /></div>`
-                                // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
-                                // alt=${i} /></div>`)
+
                             }
                         }
                         if (i > 5) {
                             document.getElementById("imageText2").innerHTML += `<div class=image-container ><img src=${re[i].url} width=${size} height=${size}
                                                     alt=${i} title=${re[i].title} /></div>`
-                            // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
-                            // alt=${i} /></div>`)
-                        }
 
+                        }
                     }
                 }
                 else {
 
                     for (var i = 0; i < re.length; i++) {
                         if (i <= 4) {
-                            // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
-                            //                                 alt=${i} /></div>`)
                             document.getElementById("imageText").innerHTML += `<div class=image-container style="padding-left: 10px" ><img src=${re[i].url} width=${size} height=${size}
                                                     alt=${i} title=${re[i].title} /></div>`
                         }
-
                         else {
                             document.getElementById("imageText1").innerHTML += `<div class=image-container style="padding-left: 10px"><img src=${re[i].url} width=${size} height=${size}
                                                     alt=${i} title=${re[i].title} /></div>`
-                            // sampleArray.push(`<div class=image-container><img src=${re[i]} width="45" height="45"
-                            // alt=${i} /></div>`)
                         }
 
                     }
-                    // document.getElementById("imageText1").innerHTML = sampleArray
+
                 }
             }
         }

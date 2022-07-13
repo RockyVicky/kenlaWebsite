@@ -848,7 +848,8 @@ button:focus ~.popup{
   }
   .service-scroll{
     overflow-y: scroll;
-    color: white;
+    color: #0A2A59;
+    font-family: Poppins-Medium;
     /*text-align: justify;
     font-size: 12px;
     font-weight: 5px;

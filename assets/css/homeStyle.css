@@ -506,16 +506,18 @@
 }   */
 
 
-/* .infoMain{
+.infoMain{
     display: flex;
-    justify-content: center;
+    justify-content: right;
 
-} */
+}
 .info{
     z-index: 2;
     position:absolute;
     border: none;
     background-color: transparent ;
+    display: flex;
+    justify-content: center;
 }
 button:focus ~.popup{
     clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);

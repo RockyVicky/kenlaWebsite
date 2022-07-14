@@ -523,7 +523,7 @@ button:focus ~.popup{
 .card-div:hover{
     /* -webkit-transform: scale(1.15); */
     transform: scale(1.11);
-    transform-origin: 0% 0;
+    transform-origin: 50% 0;
     -webkit-font-smoothing: subpixel-antialiased;
 }
 

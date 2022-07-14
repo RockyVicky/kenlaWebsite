@@ -521,8 +521,9 @@ button:focus ~.popup{
     clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
 }
 .card-div:hover{
-    -webkit-transform: scale(1.15);
+    /* -webkit-transform: scale(1.15); */
     transform: scale(1.15);
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .serv-text-style {
